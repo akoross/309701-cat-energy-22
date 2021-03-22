@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Sergiy Soroka](https://up.htmlacademy.ru/adaptive/22/user/309701).
-* Наставник: `Неизвестно`.
+- Студент: [Sergiy Soroka](https://up.htmlacademy.ru/adaptive/22/user/309701).
+- Наставник: Arthur Litovko.
 
 ---
 
