@@ -7,27 +7,26 @@
 
 </head>
 
-<body class="page__body">
+<body class="page-body">
 
   <header class="page-header">
     <div class="wrapper">
       <a class="page-header__logo">
-        <img class="page-header__logo-mascot" src="./img/logo-mascot.svg" alt="Логотип картинка" width="33.32"
-          height="37.61">
-        <img class="page-header__logo-text" src="./img/logo-title.svg" alt="Cat Energy" width="101" height="17.99">
+        <img class="page-header__logo-mascot" src="./img/logo-mascot.svg" alt="Логотип картинка" width="33" height="38">
+        <img class="page-header__logo-text" src="./img/logo-title.svg" alt="Cat Energy" width="101" height="18">
       </a>
       <nav class="main-nav">
         <button class="main-nav__togle" type="button"><span class="visually-hiden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a>главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">каталог продукции</a>
+              <a href="./catalog.html">каталог продукции</a>
             </li>
-            <li class="main-nav__item">
-              <a href="#">подбор программы</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a href="./form.html">подбор программы</a>
             </li>
           </ul>
 
@@ -88,35 +87,35 @@
       <div class="wrapper">
         <h2 class="special__title">Как это работает</h2>
         <ul class="special__list">
-          <li class="spetial__title">
-            <div class="special__title-icon">
+          <li class="special__item">
+            <div class="special__item-icon">
               <img src="./img/icon_leaf.svg" alt="Иконка" width="30" height="32">
             </div>
-            <p class="special__title-text">
+            <p class="special__item-text">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
-          <li class="spetial__title">
-            <div class="special__title-icon">
+          <li class="special__item">
+            <div class="special__item-icon">
               <img src="./img/icon_tub.svg" alt="Иконка" width="29" height="31">
             </div>
-            <p class="special__title-text">
+            <p class="special__item-text">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
-          <li class="spetial__title">
-            <div class="special__title-icon">
+          <li class="special__item">
+            <div class="special__item-icon">
               <img src="./img/icon_eat.svg" alt="Иконка" width="25" height="30">
             </div>
-            <p class="special__title-text">
+            <p class="special__item-text">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
-          <li class="spetial__title">
-            <div class="special__title-icon">
+          <li class="special__item">
+            <div class="special__item-icon">
               <img src="./img/icon_alarm.svg" alt="Иконка" width="32" height="33">
             </div>
-            <p class="special__title-text">
+            <p class="special__item-text">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
@@ -154,7 +153,7 @@
               <img src="./img/after.png" alt="Стройный кот" width="251" height="240">
             </li>
           </ul>
-          <p class="exaple__toggles slider__toggles">
+          <p class="slider__toggles">
             <span>было</span>
             <input class="slider__toggle" type="range" min="0" max="100" step="1" value="50">
             <span>стало</span>
@@ -186,28 +185,30 @@
   <footer class="footer">
     <div class="wrapper">
       <a class="footer__logo">
-        <img src="./img/logo-title.svg" alt="Cat Energy Питание для котов">
+        <img src="./img/logo-title.svg" alt="Cat Energy Питание для котов" width="128" height="24">
       </a>
-      <ul class="footer__social social__list">
-        <li class="social__item">
-          <a href="https://www.vkontakte.ru/" class="social__link vk">
+      <ul class="footer__social social-list">
+        <li class="social-item">
+          <a href="https://www.vkontakte.ru/" class="social-link vk">
             <img src="./img/icon_vkontakte.svg" alt="Вконтакте" width="22" height="22">
           </a>
         </li>
-        <li class="social__item">
-          <a href="https://www.instagram.com/" class="social__link instagram">
+        <li class="social-item">
+          <a href="https://www.instagram.com/" class="social-link instagram">
             <img src="./img/icon_instagram.svg" alt="Инстаграм" width="22" height="22">
           </a>
         </li>
-        <li class="social__item">
-          <a href="https://www.facebook.com/" class="social__link fb">
+        <li class="social-item">
+          <a href="https://www.facebook.com/" class="social-link fb">
             <img src="./img/icon_facebook.svg" alt="Фейсбук" width="22" height="22">
           </a>
         </li>
       </ul>
       <div class="footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <img src="./img/logo_html.svg" alt="Html-academy" class="copyright__icon" width="27" height="34">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__text">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__icon">
+          <img src="./img/logo_html.svg" alt="Html-academy" width="27" height="34">
+        </a>
       </div>
     </div>
   </footer>
