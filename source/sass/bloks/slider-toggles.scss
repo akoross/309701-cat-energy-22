@@ -1,0 +1,20 @@
+.slider-toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-toggles__button {
+  padding: 2px 10px;
+  border: none;
+  font-family: $font-site;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.slider-toggles__scale {
+  width: 84px;
+  height: 14px;
+  background: url("../../img/slider.svg");
+}

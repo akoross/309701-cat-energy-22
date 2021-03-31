@@ -1,0 +1,27 @@
+.special__wrapper {
+  padding: 0 20px 42px;
+}
+
+.special__title {
+  font-family: $font-site;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+
+.special__item {
+  display: flex;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.special__picture {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  background: #68b738;
+  margin-right: 20px;
+}

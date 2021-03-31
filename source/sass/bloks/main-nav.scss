@@ -1,0 +1,18 @@
+.main-nav__toggle {
+  position: absolute;
+  top: -32px;
+  right: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+}
+
+.main-nav__toggle--burger {
+  background: url("../../img/burger.svg") no-repeat center center;
+}
+
+.main-nav__toggle--clossed {
+  background: url("../../img/clossed.svg") no-repeat center center;
+}

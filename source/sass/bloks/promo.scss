@@ -1,0 +1,43 @@
+.promo {
+  color: #ffffff;
+  font-family: $font-site;
+
+  &::before {
+    content: "";
+    display: table;
+    position: absolute;
+    width: 320px;
+    height: 302px;
+    background: url("../../img/index-background-promo.png");
+    background-position: center center;
+  }
+}
+
+.promo__wrapper {
+  position: relative;
+  padding: 27px 20px 0;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.promo__subtitle {
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
+}
+
+.promo__button {
+  height: 40px;
+}

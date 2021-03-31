@@ -1,0 +1,35 @@
+.example {
+  background-color: $bg-color;
+}
+
+.example__wrapper {
+  padding: 22px 20px 27px;
+}
+
+.example__title {
+  font-family: $font-site;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.example__text {
+  color: #444444;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.example__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.example__price {
+  font-family: $font-site;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 42px;
+}

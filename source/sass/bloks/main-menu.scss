@@ -1,0 +1,14 @@
+.main-menu {
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: $font-site;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 16px 0 24px;
+}
+
+.main-menu__item {
+  padding: 22px 0 24px;
+  border-top: 1px solid #e6e6e6;
+}

@@ -1,1 +1,29 @@
-// Начните писать стили здесь
+// підключаємо шрифти
+@import "./fonts.scss";
+//підключаємо змінні
+@import "./variables.scss";
+//підключаємо стилі компонентів
+@import "./normalize.scss";
+@import "./bloks/visually-hiden.scss";
+@import "./wrapper.scss";
+//-------------
+@import "./bloks/button.scss";
+@import "./bloks/page.scss";
+@import "./bloks/page-body.scss";
+@import "./bloks/page-header.scss";
+@import "./bloks/header-logo.scss";
+@import "./bloks/main-nav.scss";
+@import "./bloks/main-menu.scss";
+@import "./bloks/promo.scss";
+@import "./bloks/selection.scss";
+@import "./bloks/selection-item.scss";
+@import "./bloks/special";
+@import "./bloks/example.scss";
+@import "./bloks/example-item.scss";
+@import "./bloks/slider.scss";
+@import "./bloks/slider-toggles.scss";
+@import "./bloks/contacts.scss";
+@import "./bloks/page-footer";
+@import "./bloks/footer-logo";
+@import "./bloks/social.scss";
+@import "./bloks/copyright.scss";
