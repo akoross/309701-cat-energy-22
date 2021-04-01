@@ -11,19 +11,26 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 33px;
+  padding: 0;
+  margin: 0 0 33px 0;
 }
 
 .example__text {
   color: #444444;
   line-height: 18px;
-  margin-bottom: 25px;
+  padding: 0;
+  margin: 0 0 25px 0;
 }
 
 .example__list {
+  @include list(0, 0 0 20px 0);
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  align-content: center;
+}
+
+.example__item {
+  position: relative;
 }
 
 .example__price {
@@ -31,5 +38,6 @@
   text-transform: uppercase;
   line-height: 20px;
   text-align: center;
-  margin-bottom: 42px;
+  padding: 0;
+  margin: 0 0 42px 0;
 }

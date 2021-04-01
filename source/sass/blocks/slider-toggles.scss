@@ -16,5 +16,11 @@
 .slider-toggles__scale {
   width: 84px;
   height: 14px;
-  background: url("../../img/slider.svg");
+  // background: url("../../img/slider.svg");
+}
+
+.slider-toggles__bar {
+  width: 84px;
+  padding: 0;
+  margin: 0;
 }

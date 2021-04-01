@@ -2,10 +2,14 @@
   padding: 0 20px;
 }
 
+.selection__list {
+  @include list;
+}
+
 .selection__item {
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 
   &:last-child {
-    margin-bottom: 27px;
+    margin: 0 0 27px 0;
   }
 }

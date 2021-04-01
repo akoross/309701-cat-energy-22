@@ -1,8 +1,12 @@
 .slider__list {
-  margin-bottom: 23px;
+  @include list(0, 0 0 23px 0);
 }
 
 .slider__item {
   display: flex;
   justify-content: center;
+}
+
+.slider__toggles {
+  @include list;
 }

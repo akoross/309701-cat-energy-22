@@ -7,6 +7,8 @@
 }
 
 .example-item__value {
+  padding: 14px 0 0 0;
+  margin: 0;
   font-family: $font-site;
   font-size: 24px;
   line-height: 24px;
@@ -14,13 +16,15 @@
 }
 
 .example-item__description {
-  position: relative;
+  padding: 0;
+  margin: 0;
+  position: absolute;
   width: 80px;
   background-color: $bg-color;
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-  bottom: -20px;
+  bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
 }
