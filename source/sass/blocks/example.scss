@@ -1,0 +1,43 @@
+.example {
+  background-color: $bg-color;
+}
+
+.example__wrapper {
+  padding: 22px 20px 27px;
+}
+
+.example__title {
+  font-family: $font-site;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 33px 0;
+}
+
+.example__text {
+  color: #444444;
+  line-height: 18px;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.example__list {
+  @include list(0, 0 0 20px 0);
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.example__item {
+  position: relative;
+}
+
+.example__price {
+  font-family: $font-site;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 42px 0;
+}

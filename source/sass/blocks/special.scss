@@ -1,0 +1,44 @@
+.special__wrapper {
+  padding: 0 20px 42px;
+}
+
+.special__title {
+  font-family: $font-site;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 38px 0;
+}
+
+.special__list {
+  @include list;
+}
+
+.special__item {
+  display: flex;
+  margin: 0 0 20px 0;
+  color: #444444;
+}
+
+.special__picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  align-self: center;
+  background: #68b738;
+  padding: 0 14px;
+  margin: 0 20px 0 0;
+}
+
+.special__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.special__text {
+  padding: 0;
+  margin: 0;
+}
