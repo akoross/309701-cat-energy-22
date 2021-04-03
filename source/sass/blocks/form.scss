@@ -141,6 +141,7 @@
     border-color: $special_grey;
     resize: none;
     height: 150px;
+    margin: 20px 0 5px 0;
   }
 }
 
@@ -148,12 +149,12 @@
   @include reset-fieldset;
 }
 
-.form__options-check {
-  margin: 0 0 13px 0;
+.form__options-legend {
+  margin: 0 0 21px 0;
+}
 
-  &:last-child {
-    margin: 0;
-  }
+.form__options-check {
+  margin: 13px 0 0 0;
 }
 
 .form__options-check--checkbox {
@@ -175,7 +176,7 @@
     width: 30px;
     height: 30px;
     border: 1px solid $special_grey-1;
-    margin-right: 15px;
+    margin-right: 16px;
     border-image: initial;
   }
 }
