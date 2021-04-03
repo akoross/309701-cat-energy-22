@@ -1,1 +1,11 @@
-// TODO: card description styles or delete this class and file
+.card-description {
+  width: 140px;
+  border-spacing: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special_dark-grey-1;
+}
+
+.card-description__value {
+  text-align: right;
+}

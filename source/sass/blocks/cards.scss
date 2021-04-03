@@ -1,1 +1,27 @@
-// TODO: cards styles or delete this class and file
+.cards {
+  width: 320px;
+  border-top: 1px solid $special_grey-2;
+  border-bottom: 1px solid $special_grey-2;
+}
+
+.cards__wrapper {
+  transform: translate(-20px);
+}
+
+.cards__title {
+  font-family: $font-site;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 0 41px 20px;
+}
+
+.cards__list {
+  @include list;
+  width: 320px;
+}
+
+.cards__item {
+  border-top: 1px solid $special_grey-2;
+  padding: 20px 20px 25px 20px;
+}

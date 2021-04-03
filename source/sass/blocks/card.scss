@@ -1,1 +1,78 @@
-// TODO: card styles or delete this class and file
+.card__wrapper {
+  display: grid;
+  grid-template-rows: auto auto 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__image-link {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 112px;
+  margin: 0 0 13px 0;
+}
+
+.card__image-link-all {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin: 0 0 13px 0;
+}
+
+.card__title {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  width: 76px;
+  text-transform: uppercase;
+  font-family: $font-site;
+  color: $special_dark-grey-2;
+}
+
+.card__title-all {
+  grid-row: 2 / 3;
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.card__title-all-first {
+  font-family: $font-site;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__title-all-two {
+  color: $special_dark-grey-1;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 21px 0;
+}
+
+.card__description {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.card__button {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  width: 100%;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-family: $font-site;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button-all {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  color: $special_dark-grey-1;
+  background-color: $basic_grey;
+}
