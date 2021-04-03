@@ -1,8 +1,22 @@
+.contacts {
+  width: 320px;
+  background: $basic_grey;
+}
+
+.contacts__wrapper {
+  transform: translate(-20px);
+}
+
 .contacts__header {
   padding: 28px 19px;
   display: flex;
   justify-content: space-between;
   font-style: normal;
+  // width: calc(100% + 40px);
+
+  &--index {
+    background: #ffffff;
+  }
 }
 
 .contacts__title {
@@ -19,7 +33,7 @@
   padding: 0;
   margin: 0;
   width: 50%;
-  color: #444444;
+  color: $special_dark-grey-1;
   line-height: 20px;
 }
 

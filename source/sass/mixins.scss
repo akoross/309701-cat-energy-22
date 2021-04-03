@@ -3,3 +3,11 @@
   padding: $padding;
   margin: $margin;
 }
+
+@mixin reset-fieldset {
+  margin-inline: 0;
+  border: none;
+  padding: 0;
+  padding-inline: 0;
+  padding-block: 0;
+}

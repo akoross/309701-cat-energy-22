@@ -1,15 +1,12 @@
-.page-footer {
-  background: #f2f2f2;
-}
-
 .page-footer__wrapper {
-  padding: 39px 20px 22px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  width: 320px;
+  background-color: $basic_grey;
+  padding: 39px 0 22px 0;
 }
 
 .page-footer__logo {
+  display: block;
+  text-align: center;
   margin-bottom: 32px;
 }
 
@@ -17,6 +14,6 @@
   @include list(20px 0, 0);
   width: 100%;
   padding: 20px 0;
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid $special_grey-1;
+  border-bottom: 1px solid $special_grey-1;
 }
