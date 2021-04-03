@@ -1,5 +1,5 @@
 .special__wrapper {
-  padding: 0 20px 42px;
+  padding: 0 0 42px 0;
 }
 
 .special__title {
@@ -18,7 +18,7 @@
 .special__item {
   display: flex;
   margin: 0 0 20px 0;
-  color: #444444;
+  color: $special_dark-grey-1;
 }
 
 .special__picture {
@@ -28,7 +28,7 @@
   width: 60px;
   height: 60px;
   align-self: center;
-  background: #68b738;
+  background: $basic_green;
   padding: 0 14px;
   margin: 0 20px 0 0;
 }

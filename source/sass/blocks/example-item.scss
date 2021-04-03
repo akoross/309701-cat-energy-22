@@ -2,7 +2,7 @@
   width: 124px;
   height: 56px;
   text-align: center;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $special_grey;
   border-radius: 3px;
 }
 
@@ -20,10 +20,10 @@
   margin: 0;
   position: absolute;
   width: 80px;
-  background-color: $bg-color;
+  background-color: $basic_grey;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $special_dark-grey-1;
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
