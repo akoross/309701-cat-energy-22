@@ -1,3 +1,25 @@
+.header-logo {
+  cursor: pointer;
+
+  @media (min-width: $width-tablet) {
+    background: url("../../img/logo-tablet.svg") no-repeat 0 center;
+  }
+
+  @media (min-width: $width-desktop) {
+    background: url("../../img/logo-desktop.svg") no-repeat 0 center;
+  }
+}
+
 .header-logo__mascot {
   margin-right: 55px;
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.header-logo__text {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
 }

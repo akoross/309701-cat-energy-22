@@ -1,10 +1,21 @@
 .copyright {
   padding-top: 22px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
+  color: $special_dark-grey-1;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $width-tablet) {
+    width: 169px;
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

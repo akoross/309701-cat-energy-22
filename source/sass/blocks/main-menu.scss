@@ -5,10 +5,50 @@
   font-family: $font-site;
   font-size: 20px;
   line-height: 20px;
-  // padding: 16px 0 24px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-self: center;
+  }
 }
 
 .main-menu__item {
   padding: 22px 0 24px;
   border-top: 1px solid $special_grey-2;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 0 10px 0;
+    margin-right: 34px;
+    border: none;
+    height: 100%;
+
+    &:last-child {
+      margin-right: 0;
+      text-align: right;
+    }
+  }
+}
+
+.main-menu__link {
+  @media (min-width: $width-tablet) {
+    display: block;
+    transform: translateY(3px);
+    height: 100%;
+
+    &:hover {
+      border-bottom: 2px solid $button-hover-color;
+      padding: 0 0 10px 0;
+      transform: translateY(10px);
+    }
+
+    &--active {
+      border-bottom: 2px solid $button-hover-color;
+      padding: 0 0 10px 0;
+      transform: translateY(10px);
+    }
+  }
 }
