@@ -19,6 +19,7 @@
 .main-menu__item {
   padding: 22px 0 24px;
   border-top: 1px solid $special_grey-2;
+  transform: translateY(10px);
 
   @media (min-width: $width-tablet) {
     padding: 0 0 10px 0;
@@ -34,21 +35,39 @@
 }
 
 .main-menu__link {
+  padding: 0 0 10px 0;
+
   @media (min-width: $width-tablet) {
     display: block;
-    transform: translateY(3px);
     height: 100%;
+  }
 
-    &:hover {
+  &--index {
+    @media (min-width: $width-desktop) {
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    @media (min-width: $width-tablet) {
       border-bottom: 2px solid $button-hover-color;
-      padding: 0 0 10px 0;
-      transform: translateY(10px);
     }
 
-    &--active {
+    @media (min-width: $width-desktop) {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  &--active {
+    @media (min-width: $width-tablet) {
       border-bottom: 2px solid $button-hover-color;
       padding: 0 0 10px 0;
-      transform: translateY(10px);
+    }
+  }
+
+  &--active-index {
+    @media (min-width: $width-desktop) {
+      border-bottom: 2px solid #ffffff;
     }
   }
 }

@@ -1,5 +1,9 @@
 .selection__list {
   @include list;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
 }
 
 .selection__item {

@@ -3,8 +3,22 @@
   width: 57px;
   height: 57px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 134px;
+  left: 139px;
   background: url("../../img/map-png.svg") center center no-repeat;
+  background-size: 57px 57px;
+
+  @media (min-width: $width-tablet) {
+    width: 115px;
+    height: 115px;
+    top: 146px;
+    left: 333px;
+    background-size: contain;
+  }
+
+  @media (min-width: $width-desktop) {
+    top: 131px;
+    transform: translateX(570px);
+    z-index: 1000;
+  }
 }
