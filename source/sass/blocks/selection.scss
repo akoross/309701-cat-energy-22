@@ -4,12 +4,30 @@
   @media (min-width: $width-tablet) {
     padding: 0;
   }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .selection__item {
   margin: 0 0 20px 0;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0;
+    margin: 0;
+  }
+
   &:last-child {
     margin: 0 0 27px 0;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 0;
+    }
   }
 }

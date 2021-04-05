@@ -1,5 +1,6 @@
 .page-header__wrapper {
   @media (min-width: $width-tablet) {
+    width: 709px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,6 +9,7 @@
   }
 
   @media (min-width: $width-desktop) {
+    width: 1220px;
     height: 112px;
   }
 }
@@ -28,7 +30,7 @@
 
   @media (min-width: $width-desktop) {
     width: 202px;
-    height: 59;
+    height: 59px;
   }
 }
 

@@ -1,11 +1,31 @@
 .example {
   width: 320px;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
 }
 
 .example__wrapper {
-  background-color: $basic_grey;
+  background: $basic_grey;
   transform: translate(-20px);
   padding: 22px 20px 27px;
+
+  @media (min-width: $width-tablet) {
+    padding: 43px 30px 33px;
+    transform: translate(-30px);
+    background: linear-gradient(to top, $basic_grey 462px, #ffffff 462px);
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 110px 64px;
+    transform: translate(-110px);
+    display: grid;
+  }
 }
 
 .example__title {
@@ -15,6 +35,20 @@
   font-weight: 400;
   padding: 0;
   margin: 0 0 33px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 63px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    padding: 70px 0 78px;
+    margin: 0;
+    align-self: center;
+  }
 }
 
 .example__text {
@@ -22,6 +56,38 @@
   line-height: 18px;
   padding: 0;
   margin: 0 0 25px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 54px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 436px;
+    margin: 0;
+    padding: 70px 0 0;
+  }
+}
+
+.example__calculation {
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 59px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .example__list {
@@ -29,6 +95,11 @@
   display: flex;
   justify-content: space-between;
   align-content: center;
+
+  @media (min-width: $width-tablet) {
+    width: 366px;
+    margin: 0;
+  }
 }
 
 .example__item {
@@ -42,4 +113,29 @@
   text-align: center;
   padding: 0;
   margin: 0 0 42px 0;
+
+  &-value {
+    display: inline-block;
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 29px;
+    width: 174px;
+    margin: 0;
+    text-align: right;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 327px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.example__slider {
+  @media (min-width: $width-desktop) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
 }

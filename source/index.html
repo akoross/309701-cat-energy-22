@@ -50,7 +50,10 @@
         <h2 class="visually-hiden">Выбор программы питания</h2>
         <ul class="selection__list">
           <li class="selection__item selection-item">
-            <img src="./img/cat_slim.svg" alt="Стройный кот" class="selection-item__icon" width="50" height="53">
+            <div class="selection-item__icon">
+              <img src="./img/cat-slim.svg" alt="Стройный кот" class=" selection-item__icon-slim" width="50"
+                height="53">
+            </div>
             <h3 class="selection-item__title">
               Похудение
             </h3>
@@ -63,7 +66,10 @@
             </a>
           </li>
           <li class="selection__item selection-item">
-            <img src="./img/cat_pro.svg" alt="Мускулистый кот" class="selection-item__icon" width="67" height="50">
+            <div class="selection-item__icon">
+              <img src="./img/cat-pro.svg" alt="Мускулистый кот" class="selection-item__icon-pro" width="67"
+                height="50">
+            </div>
             <h3 class="selection-item__title">
               Набор массы
             </h3>
@@ -123,26 +129,30 @@
             без
             изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <ul class="example__list">
-            <li class="example__item example-item">
-              <p class="example-item__value">5 КГ</p>
-              <p class="example-item__description">снижение веса</p>
-            </li>
-            <li class="example__item example-item">
-              <p class="example-item__value">60 ДНЕЙ</p>
-              <p class="example-item__description">затрачено времени</p>
-            </li>
-          </ul>
-          <p class="example__price">Затраты на питание:
-            <span class="example__price-value">15 000 РУБ.</span>
-          </p>
+          <div class="example__calculation">
+            <ul class="example__list">
+              <li class="example__item example-item">
+                <p class="example-item__value">5 КГ</p>
+                <p class="example-item__description">снижение веса</p>
+              </li>
+              <li class="example__item example-item">
+                <p class="example-item__value">60 ДНЕЙ</p>
+                <p class="example-item__description">затрачено времени</p>
+              </li>
+            </ul>
+            <p class="example__price">Затраты на питание:
+              <span class="example__price-value">15 000 РУБ.</span>
+            </p>
+          </div>
           <div class="example__slider slider">
             <ul class="slider__list">
               <li class="slider__item">
-                <img src="./img/before.png" class="slider__image" alt="Толстый кот" width="311" height="232">
+                <img src="./img/before.png" class="slider__image slider__image--before" alt="Толстый кот" width="311"
+                  height="232">
               </li>
               <li class="slider__item">
-                <img src="./img/after.png" class="slider__image" alt="Стройный кот" width="251" height="240">
+                <img src="./img/after.png" class="slider__image slider__image--after" alt="Стройный кот" width="251"
+                  height="240">
               </li>
             </ul>
             <ul class="slider__toggles slider-toggles">

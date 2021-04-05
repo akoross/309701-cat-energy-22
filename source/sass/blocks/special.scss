@@ -1,5 +1,18 @@
 .special__wrapper {
   padding: 0 0 42px 0;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet - $padding-tablet * 2;
+    padding: 45px 30px 9px 30px;
+    border-bottom: 1px solid $special_grey-2;
+    transform: translateX(-30px);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100%;
+    padding: 71px 30px 11px 30px;
+    border: none;
+  }
 }
 
 .special__title {
@@ -9,16 +22,66 @@
   font-weight: 400;
   padding: 0;
   margin: 0 0 38px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 32px 0;
+  }
 }
 
 .special__list {
   @include list;
+  counter-reset: count;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 633px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .special__item {
   display: flex;
   margin: 0 0 20px 0;
   color: $special_dark-grey-1;
+  position: relative;
+  counter-increment: count;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: column;
+    width: 245px;
+    height: 183px;
+    padding: 40px 0 57px 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 37px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+  }
+
+  &::after {
+    @media (min-width: $width-tablet) {
+      content: counter(count);
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-site;
+      color: $basic_grey;
+      z-index: -1;
+    }
+  }
 }
 
 .special__picture {
@@ -31,6 +94,13 @@
   background: $basic_green;
   padding: 0 14px;
   margin: 0 20px 0 0;
+
+  @media (min-width: $width-tablet) {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    align-self: flex-start;
+  }
 }
 
 .special__icon {
@@ -41,4 +111,11 @@
 .special__text {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

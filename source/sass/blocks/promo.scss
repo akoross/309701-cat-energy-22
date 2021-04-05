@@ -22,7 +22,7 @@
       height: 694px;
       background: url("../../img/bg-promo-desktop.png"),
         url("../../img/bg-promo-desktop-img.png");
-      right: -100px;
+      right: -128px;
       top: -112px;
       z-index: -1;
     }
@@ -65,7 +65,7 @@
     width: 414px;
     font-size: 60px;
     line-height: 60px;
-    padding: 0 0 0 117px;
+    padding: 0 0 0 87px;
     margin: 0 0 40px 0;
   }
 
@@ -83,7 +83,7 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 0 117px;
+    padding: 0 0 0 87px;
     margin: 0 0 20px 0;
   }
 
@@ -99,7 +99,7 @@
   margin-bottom: 3px;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet - $padding-tablet * 2;
+    width: 709px;
     height: 609px;
   }
 
@@ -108,7 +108,7 @@
     width: 550px;
     height: 500px;
     top: 32px;
-    right: 255px;
+    right: 230px;
   }
 }
 
@@ -121,8 +121,8 @@
     width: 244px;
     height: 45px;
     position: absolute;
-    top: 292px;
-    left: 83px;
+    top: 300px;
+    left: 80px;
   }
 
   @media (min-width: $width-desktop) {
