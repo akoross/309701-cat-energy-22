@@ -7,6 +7,21 @@
   justify-content: center;
 }
 
+.slider__image {
+  &--after {
+    display: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    width: 708px;
+    height: 620px;
+  }
+}
+
 .slider__toggles {
   @include list;
+
+  @media (min-width: $width-tablet) {
+    width: 585px;
+  }
 }

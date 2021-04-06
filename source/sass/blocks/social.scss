@@ -1,4 +1,9 @@
 .social {
   display: flex;
   justify-content: space-evenly;
+
+  @media (min-width: $width-tablet) {
+    width: 129px;
+    justify-content: space-between;
+  }
 }

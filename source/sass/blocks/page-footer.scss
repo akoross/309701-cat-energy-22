@@ -1,13 +1,36 @@
 .page-footer__wrapper {
-  width: 320px;
+  min-width: $width-mobile;
   background-color: $basic_grey;
   padding: 39px 0 22px 0;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet - $padding-tablet * 2;
+    height: 150px;
+    padding: 0 $padding-tablet;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop - $padding-desktop * 2;
+    padding: 0 $padding-desktop;
+  }
 }
 
 .page-footer__logo {
   display: block;
   text-align: center;
   margin-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    width: 169px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .page-footer__social {
@@ -16,4 +39,10 @@
   padding: 20px 0;
   border-top: 1px solid $special_grey-1;
   border-bottom: 1px solid $special_grey-1;
+
+  @media (min-width: $width-tablet) {
+    width: 169px;
+    padding: 0;
+    border: none;
+  }
 }

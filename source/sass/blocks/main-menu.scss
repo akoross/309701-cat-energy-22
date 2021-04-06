@@ -5,10 +5,69 @@
   font-family: $font-site;
   font-size: 20px;
   line-height: 20px;
-  // padding: 16px 0 24px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+    align-self: center;
+  }
 }
 
 .main-menu__item {
   padding: 22px 0 24px;
   border-top: 1px solid $special_grey-2;
+  transform: translateY(10px);
+
+  @media (min-width: $width-tablet) {
+    padding: 0 0 10px 0;
+    margin-right: 34px;
+    border: none;
+    height: 100%;
+
+    &:last-child {
+      margin-right: 0;
+      text-align: right;
+    }
+  }
+}
+
+.main-menu__link {
+  padding: 0 0 10px 0;
+
+  @media (min-width: $width-tablet) {
+    display: block;
+    height: 100%;
+  }
+
+  &--index {
+    @media (min-width: $width-desktop) {
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    @media (min-width: $width-tablet) {
+      border-bottom: 2px solid $button-hover-color;
+    }
+
+    @media (min-width: $width-desktop) {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  &--active {
+    @media (min-width: $width-tablet) {
+      border-bottom: 2px solid $button-hover-color;
+      padding: 0 0 10px 0;
+    }
+  }
+
+  &--active-index {
+    @media (min-width: $width-desktop) {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
 }
