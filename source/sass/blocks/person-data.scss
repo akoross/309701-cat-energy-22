@@ -2,6 +2,14 @@
   padding: 0 20px 0 20px;
   width: 280px;
   color: $special_dark-grey-1;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
 }
 
 .person-data__item {
@@ -9,6 +17,14 @@
   flex-wrap: nowrap;
   align-items: center;
   margin: 0 0 13px 0;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .person-data__label {
@@ -25,4 +41,14 @@
   border: 1px solid $special_grey-3;
   text-transform: uppercase;
   font-family: $font-site;
+  color: $special_dark-grey-1;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    height: 52px;
+  }
 }
