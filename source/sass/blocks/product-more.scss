@@ -1,5 +1,5 @@
 .product-more__wrapper {
-  width: $width-mobile;
+  width: $width-mobile - $padding-mobile * 2;
 
   @media (min-width: $width-tablet) {
     max-width: $width-tablet;
@@ -10,6 +10,7 @@
     display: grid;
     min-width: 1220px;
     column-gap: 80px;
+    margin-bottom: 85px;
   }
 }
 

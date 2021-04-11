@@ -20,6 +20,7 @@
   @media (min-width: $width-desktop) {
     width: 100%;
     padding: 15px 0 17px 0;
+    border: none;
     border-top: 1px solid $special_grey-2;
     border-bottom: 1px solid $special_grey-2;
     grid-template-rows: auto;

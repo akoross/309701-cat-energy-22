@@ -14,11 +14,11 @@
 }
 
 .cards__wrapper {
-  transform: translate(-$padding-mobile);
+  transform: translate(-40px);
   padding: 0 $padding-mobile;
 
   @media (min-width: $width-tablet) {
-    // transform: translate(-30px);
+    transform: translate(-20px);
   }
 }
 
