@@ -4,6 +4,22 @@
   font-size: 12px;
   line-height: 16px;
   color: $special_dark-grey-1;
+
+  @media (min-width: $width-tablet) {
+    width: 250px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 168px;
+  }
+
+  td {
+    @media (min-width: $width-tablet) {
+      border-bottom: 1px solid $special_grey;
+    }
+  }
 }
 
 .card-description__value {

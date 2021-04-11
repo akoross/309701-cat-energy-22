@@ -2,10 +2,24 @@
   width: 320px;
   border-top: 1px solid $special_grey-2;
   border-bottom: 1px solid $special_grey-2;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet - $padding-tablet * 2;
+    border: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop - $padding-desktop * 2;
+  }
 }
 
 .cards__wrapper {
-  transform: translate(-20px);
+  transform: translate(-$padding-mobile);
+  padding: 0 $padding-mobile;
+
+  @media (min-width: $width-tablet) {
+    // transform: translate(-30px);
+  }
 }
 
 .cards__title {
@@ -14,14 +28,55 @@
   font-size: 36px;
   line-height: 36px;
   padding: 27px 0 41px 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 65px 0 83px 0;
+  }
 }
 
 .cards__list {
   @include list;
   width: 320px;
+
+  @media (min-width: $width-tablet) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  @media (min-width: $width-desktop) {
+    gap: 63px;
+  }
 }
 
 .cards__item {
   border-top: 1px solid $special_grey-2;
   padding: 20px 20px 25px 20px;
+
+  @media (min-width: $width-tablet) {
+    width: 322px;
+    padding: 8px 0 40px 0;
+    border: none;
+    background: linear-gradient(to top, $special_grey-2 429px, #ffffff 429px);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+    padding: 0 0 40px 0;
+  }
+
+  &:last-child {
+    @media (min-width: $width-tablet) {
+      height: 389px;
+      padding-top: 0;
+      border: 1px solid $special_grey-2;
+      background: none;
+    }
+  }
 }
