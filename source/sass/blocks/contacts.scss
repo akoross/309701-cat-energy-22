@@ -20,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   font-style: normal;
-  background: #ffffff;
+  background: $special_grey-2;
 
   &--index {
     background: #ffffff;
@@ -28,7 +28,7 @@
 
   @media (min-width: $width-tablet) {
     height: 201px;
-    padding: 0 $padding-tablet;
+    padding: 0 $padding-tablet + 40px;
     align-items: center;
   }
 

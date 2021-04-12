@@ -2,6 +2,42 @@
   display: grid;
   grid-template-rows: auto auto 40px;
   grid-template-columns: 1fr 1fr;
+
+  @media (min-width: $width-tablet) {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    gap: 30px;
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+.card__image {
+  @media (min-width: $width-tablet) {
+    align-self: flex-end;
+  }
+
+  &--small {
+    @media (min-width: $width-tablet) {
+      width: 160px;
+      height: 170px;
+    }
+  }
+
+  &--big {
+    @media (min-width: $width-tablet) {
+      width: 170px;
+      height: 200px;
+    }
+  }
+
+  &--all {
+    @media (min-width: $width-tablet) {
+      width: 60px;
+      height: 60px;
+      // padding-bottom: 10px;
+    }
+  }
 }
 
 .card__image-link {
@@ -13,6 +49,13 @@
   width: 140px;
   height: 112px;
   margin: 0 0 13px 0;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 168px;
+    height: 200px;
+  }
 }
 
 .card__image-link-all {
@@ -23,6 +66,13 @@
   justify-content: center;
   height: 112px;
   margin: 0 0 13px 0;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    width: 168px;
+    height: 105px;
+  }
 }
 
 .card__title {
@@ -32,12 +82,33 @@
   text-transform: uppercase;
   font-family: $font-site;
   color: $special_dark-grey-2;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    width: 174px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
+}
+
+.card__weight {
+  @media (min-width: $width-tablet) {
+    display: block;
+  }
 }
 
 .card__title-all {
   grid-row: 2 / 3;
   grid-column: 1 / 3;
   text-align: center;
+
+  @media (min-width: $width-tablet) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    width: 167px;
+  }
 }
 
 .card__title-all-first {
@@ -45,6 +116,13 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0;
+    margin: 0 0 45px 0;
+  }
 }
 
 .card__title-all-two {
@@ -52,11 +130,21 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0 0 21px 0;
+
+  @media (min-width: $width-tablet) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .card__description {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
 }
 
 .card__button {
@@ -68,6 +156,16 @@
   font-family: $font-site;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    font-size: 16px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 168px;
+  }
 }
 
 .card__button-all {
@@ -75,4 +173,13 @@
   grid-row: 3 / 4;
   color: $special_dark-grey-1;
   background-color: $basic_grey;
+
+  @media (min-width: $width-tablet) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-top: 26px;
+    width: 249px;
+    height: 40px;
+    font-size: 16px;
+  }
 }
