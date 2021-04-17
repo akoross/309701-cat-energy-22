@@ -4,8 +4,12 @@
   align-items: center;
 
   @media (min-width: $width-tablet) {
-    width: 100%;
+    max-width: 590px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 100%;
   }
 }
 

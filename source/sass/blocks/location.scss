@@ -4,7 +4,8 @@
   height: 57px;
   position: absolute;
   top: 134px;
-  left: 139px;
+  left: 50%;
+  transform: translate(50%);
   background: url("../../img/map-png.svg") center center no-repeat;
   background-size: 57px 57px;
 
@@ -12,13 +13,15 @@
     width: 115px;
     height: 115px;
     top: 146px;
-    left: 333px;
+    // left: 333px;
     background-size: contain;
   }
 
   @media (min-width: $width-desktop) {
     top: 131px;
-    transform: translateX(570px);
+    // left: 0;
+    transform: translate(0);
+    left: 908px;
     z-index: 1000;
   }
 }

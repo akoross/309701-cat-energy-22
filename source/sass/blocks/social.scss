@@ -7,3 +7,28 @@
     justify-content: space-between;
   }
 }
+
+.social__link {
+  &:hover {
+    svg path {
+      fill: $basic_green;
+      stroke-width: 1;
+    }
+  }
+
+  &--fb {
+    &:hover {
+      svg path {
+        stroke: $basic_green;
+        fill: none;
+      }
+    }
+  }
+
+  &:active {
+    svg path {
+      // fill: $basic_green;
+      opacity: 0.3;
+    }
+  }
+}

@@ -1,29 +1,29 @@
 .example {
-  width: 320px;
+  min-width: $width-mobile;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet;
+    min-width: $width-tablet;
   }
 
   @media (min-width: $width-desktop) {
-    width: $width-desktop;
+    width: 100%;
+    background: linear-gradient(to top, $basic_grey 462px, #ffffff 462px);
   }
 }
 
 .example__wrapper {
   background: $basic_grey;
-  transform: translate(-20px);
-  padding: 22px 20px 27px;
+  padding: 22px $padding-mobile 27px;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
-    padding: 43px 30px 33px;
-    transform: translate(-30px);
+    padding: 43px $padding-tablet 33px;
     background: linear-gradient(to top, $basic_grey 462px, #ffffff 462px);
   }
 
   @media (min-width: $width-desktop) {
-    padding: 0 110px 64px;
-    transform: translate(-110px);
+    max-width: $width-desktop - $padding-desktop * 2;
+    padding: 0 $padding-desktop 64px;
     display: grid;
   }
 }

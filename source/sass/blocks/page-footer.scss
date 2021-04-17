@@ -1,13 +1,15 @@
+.page-footer {
+  background-color: $basic_grey;
+}
+
 .page-footer__wrapper {
   min-width: $width-mobile;
-  background-color: $basic_grey;
   padding: 39px 0 22px 0;
 
   @media (min-width: $width-tablet) {
     width: $width-tablet - $padding-tablet * 2;
     height: 150px;
     padding: 0 $padding-tablet;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
