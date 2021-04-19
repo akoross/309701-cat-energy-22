@@ -1,5 +1,6 @@
 .page-header__wrapper {
   padding: 0 $padding-mobile;
+  overflow: visible;
 
   @media (min-width: $width-tablet) {
     padding: 0 $padding-tablet;
@@ -21,6 +22,8 @@
   display: flex;
   width: 190px;
   align-items: center;
+  justify-content: flex-start;
+  // padding-left: $padding-mobile;
   padding-top: 12px;
   margin-bottom: 16px;
 

@@ -6,12 +6,16 @@
   .main-nav--nojs .main-nav__list {
     display: block;
   }
+
+  .main-nav__list {
+    width: 100vw;
+    display: none;
+    transform: translateX(-$padding-mobile);
+  }
 }
 
 .main-nav__list {
   @include list;
-  width: calc(100% + $padding-mobile);
-  display: none;
 
   &--visible {
     display: block;
@@ -33,6 +37,7 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
+  overflow: hidden;
 
   @media (min-width: $width-tablet) {
     display: none;

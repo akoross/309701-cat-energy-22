@@ -1,5 +1,4 @@
 .promo {
-  min-width: 100%;
   color: #ffffff;
   font-family: $font-site;
   position: relative;
@@ -18,7 +17,7 @@
 
 .promo__wrapper {
   position: relative;
-  padding: 27px 0 0 0;
+  padding: 27px $padding-mobile 0;
   margin-bottom: 22px;
   text-align: center;
 

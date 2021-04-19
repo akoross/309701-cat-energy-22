@@ -1,5 +1,8 @@
 .selection {
+  padding: 0 $padding-mobile;
+
   @media (min-width: $width-desktop) {
+    padding: 0;
     max-width: $width-desktop;
     margin: 0 auto;
   }
