@@ -11,6 +11,10 @@
     width: 100vw;
     display: none;
     transform: translateX(-$padding-mobile);
+
+    & .link {
+      font-weight: 500;
+    }
   }
 }
 
