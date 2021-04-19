@@ -7,6 +7,6 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: $width-desktop - $width-desktop * 2;
+    max-width: $width-desktop - $padding-desktop * 2;
   }
 }

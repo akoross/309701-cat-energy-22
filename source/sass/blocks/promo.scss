@@ -8,15 +8,15 @@
 
   @media (min-width: $width-tablet) {
     background: none;
+    color: #000000;
   }
 
-  @media (min-width: $width-tablet) {
-    color: #000000;
+  @media (min-width: $width-desktop) {
+    width: 100%;
   }
 }
 
 .promo__wrapper {
-  width: 100%;
   position: relative;
   padding: 27px 0 0 0;
   margin-bottom: 22px;
@@ -29,10 +29,8 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: $width-desktop - $padding-desktop * 2;
-    margin: 0 auto;
-    padding: 67px $padding-desktop 0;
     min-height: 665px;
+    margin: 0 auto;
 
     &::before {
       content: "";
@@ -40,11 +38,12 @@
 
       @media (min-width: $width-desktop) {
         display: block;
-        width: 720px;
+        min-width: 720px;
         height: 694px;
         background: url("../../img/bg-promo-desktop.png"),
-          url("../../img/bg-promo-desktop-img.png");
-        right: 0;
+          url("../../img/bg-promo-desktop-img.png") no-repeat;
+        background-size: contain;
+        right: -$padding-desktop;
         top: -112px;
         z-index: -1;
       }
@@ -108,7 +107,7 @@
     width: 550px;
     height: 500px;
     top: 32px;
-    right: 330px;
+    right: 220px;
   }
 }
 

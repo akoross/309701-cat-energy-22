@@ -15,7 +15,6 @@
   @media (min-width: $width-desktop) {
     max-width: $width-desktop - $padding-desktop * 2;
     margin: 0 auto;
-    // transform: translate(-$padding-desktop * 2);
     padding: 0 $padding-desktop;
     display: flex;
     align-items: center;
@@ -36,10 +35,8 @@
   }
 
   @media (min-width: $width-tablet) {
-    // width: 100%;
     padding: 0 71px;
     height: 201px;
-    // padding: 0 $padding-tablet + 40px;
     align-items: center;
   }
 
@@ -89,22 +86,17 @@
 }
 
 .contacts__location {
-  // width: 100%;
   min-height: 362px;
   background: url("../../img/map.svg") no-repeat;
   background-size: cover;
   position: relative;
 
   @media (min-width: $width-tablet) {
-    // width: $width-tablet;
     min-height: 400px;
     background-image: url("../../img/map-tablet.svg");
   }
 
   @media (min-width: $width-desktop) {
-    // width: $width-desktop;
-    // background: no-repeat;
     background: none;
-    // position: static;
   }
 }
