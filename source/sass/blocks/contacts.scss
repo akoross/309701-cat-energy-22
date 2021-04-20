@@ -6,8 +6,6 @@
 }
 
 .contacts__wrapper {
-  width: 100vw;
-
   @media (min-width: $width-tablet) {
     transform: translate(0);
   }
