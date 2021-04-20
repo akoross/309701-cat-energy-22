@@ -1,8 +1,11 @@
 .selection {
   padding: 0 $padding-mobile;
 
-  @media (min-width: $width-desktop) {
+  @media (min-width: $width-tablet) {
     padding: 0;
+  }
+
+  @media (min-width: $width-desktop) {
     max-width: $width-desktop;
     margin: 0 auto;
   }
