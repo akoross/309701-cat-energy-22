@@ -1,11 +1,25 @@
-.selection__list {
-  @include list;
+.selection {
+  padding: 0 $padding-mobile;
 
   @media (min-width: $width-tablet) {
     padding: 0;
   }
 
   @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    margin: 0 auto;
+  }
+}
+
+.selection__list {
+  @include list;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 $padding-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 $padding-desktop;
     display: flex;
     justify-content: space-between;
   }

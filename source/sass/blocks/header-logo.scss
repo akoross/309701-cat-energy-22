@@ -7,6 +7,14 @@
 
   @media (min-width: $width-desktop) {
     background: url("../../img/logo-desktop.svg") no-repeat bottom 0 center;
+
+    &:hover {
+      background-image: url("../../img/logo-desktop-hover.svg");
+    }
+
+    &:active {
+      background-image: url("../../img/logo-desktop-pressed.svg");
+    }
   }
 }
 

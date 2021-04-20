@@ -1,6 +1,9 @@
 .page-header__wrapper {
+  padding: 0 $padding-mobile;
+  overflow: visible;
+
   @media (min-width: $width-tablet) {
-    width: 709px;
+    padding: 0 $padding-tablet;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9,14 +12,17 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 1220px;
+    max-width: 1220px;
+    padding: 0 $padding-desktop;
     height: 112px;
   }
 }
 
 .page-header__logo {
   display: flex;
+  width: 190px;
   align-items: center;
+  justify-content: flex-start;
   padding-top: 12px;
   margin-bottom: 16px;
 
@@ -38,6 +44,6 @@
   position: relative;
 
   @media (min-width: $width-tablet) {
-    width: 440px;
+    min-width: 440px;
   }
 }

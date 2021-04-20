@@ -22,6 +22,10 @@
   @include list;
 
   @media (min-width: $width-tablet) {
-    width: 585px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
   }
 }

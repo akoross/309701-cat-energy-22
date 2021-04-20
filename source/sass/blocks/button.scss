@@ -11,4 +11,12 @@
   color: #ffffff;
   background-color: $basic_green;
   cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }

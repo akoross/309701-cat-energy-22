@@ -2,44 +2,22 @@
   color: #ffffff;
   font-family: $font-site;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 320px;
-    height: 302px;
-    transform: translate(-20px);
-    background: url("../../img/index-background-promo.png");
-    background-position: center center;
-
-    @media (min-width: $width-tablet) {
-      display: none;
-    }
-
-    @media (min-width: $width-desktop) {
-      display: block;
-      width: 720px;
-      height: 694px;
-      background: url("../../img/bg-promo-desktop.png"),
-        url("../../img/bg-promo-desktop-img.png");
-      right: -128px;
-      top: -112px;
-      z-index: -1;
-    }
-  }
+  background: url("../../img/Rectangle-18.png") no-repeat 0 0 / 100% 302px,
+    url("../../img/index-background-desktop-2.png") no-repeat center 0 / 320px;
 
   @media (min-width: $width-tablet) {
+    background: none;
     color: #000000;
   }
 
   @media (min-width: $width-desktop) {
-    height: 665px;
+    width: 100%;
   }
 }
 
 .promo__wrapper {
   position: relative;
-  padding: 27px 0 0 0;
+  padding: 27px $padding-mobile 0;
   margin-bottom: 22px;
   text-align: center;
 
@@ -50,7 +28,25 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-left: 80px;
+    min-height: 665px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      @media (min-width: $width-desktop) {
+        display: block;
+        min-width: 720px;
+        height: 694px;
+        background: url("../../img/bg-promo-desktop.png"),
+          url("../../img/bg-promo-desktop-img.png") no-repeat;
+        background-size: contain;
+        right: -$padding-desktop;
+        top: -112px;
+        z-index: -1;
+      }
+    }
   }
 }
 
@@ -65,12 +61,13 @@
     width: 414px;
     font-size: 60px;
     line-height: 60px;
-    padding: 0 0 0 87px;
+    padding: 0 0 0 11.33%;
     margin: 0 0 40px 0;
   }
 
   @media (min-width: $width-desktop) {
     padding: 0;
+    margin-left: 80px;
   }
 }
 
@@ -83,13 +80,14 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 0 87px;
+    padding: 0 0 0 11.33%;
     margin: 0 0 20px 0;
   }
 
   @media (min-width: $width-desktop) {
     padding: 0;
     margin-bottom: 52px;
+    margin-left: 80px;
   }
 }
 
@@ -108,7 +106,7 @@
     width: 550px;
     height: 500px;
     top: 32px;
-    right: 230px;
+    right: 220px;
   }
 }
 
@@ -127,5 +125,6 @@
 
   @media (min-width: $width-desktop) {
     position: static;
+    margin-left: 80px;
   }
 }
