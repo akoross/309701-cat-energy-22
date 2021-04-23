@@ -1,14 +1,17 @@
 .person-data {
-  padding: 0 20px 0 20px;
-  width: 280px;
+  padding: 0 20px 0 0;
+  width: 100%;
+  min-width: 280px;
   color: $special_dark-grey-1;
 
   @media (min-width: $width-tablet) {
     width: 100%;
+    min-width: 630px;
+    padding: 0;
   }
 
   @media (min-width: $width-desktop) {
-    width: 570px;
+    min-width: 0;
   }
 }
 
@@ -51,4 +54,19 @@
   @media (min-width: $width-desktop) {
     height: 52px;
   }
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    border-color: $special_dark-grey-1;
+    border-width: 2px;
+    outline: none;
+  }
+
+  // &:invalid:required {
+  //   border-color: $status_error;
+  //   border-width: 2px;
+  // }
 }

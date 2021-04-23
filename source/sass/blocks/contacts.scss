@@ -1,4 +1,6 @@
 .contacts {
+  min-width: 320px;
+
   @media (min-width: $width-desktop) {
     background: url("../../img/man-desktop.svg") no-repeat;
     background-size: cover;
