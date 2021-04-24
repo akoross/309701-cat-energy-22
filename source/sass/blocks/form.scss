@@ -9,6 +9,10 @@
     border: none;
     overflow: visible;
   }
+
+  @media (min-width: $width-desktop) {
+    overflow: hidden;
+  }
 }
 
 .form__input-mail,
@@ -110,6 +114,36 @@
     left: -30px;
     max-width: 593px;
     margin-bottom: 76px;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: max-content;
+  }
+
+  &::before {
+    @media (min-width: $width-desktop) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      right: 0;
+      height: 3px;
+      background: $basic_green;
+      z-index: -1;
+    }
+  }
+
+  &::after {
+    @media (min-width: $width-desktop) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      left: 20px;
+      height: 3px;
+      background: $basic_green;
+      z-index: -1;
+    }
   }
 }
 
@@ -239,14 +273,13 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 100vw;
-    transform: translate(-110px);
-    padding: 0;
-    margin: 69px 0;
+    width: 100%;
+    margin: 69px auto 69px auto;
     display: flex;
     column-gap: 78px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-top: none;
   }
 }
 
@@ -350,12 +383,10 @@
   }
 
   @media (min-width: $width-desktop) {
-    width: 100vw;
-    transform: translate(-110px);
-    // padding: 0 0 0 110px;
-    padding: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
+    border-top: none;
   }
 
   & .form__legend {
@@ -410,10 +441,9 @@
 
   @media (min-width: $width-desktop) {
     column-gap: 95px;
-    width: 100vw;
-    transform: translate(-110px);
-    padding: 0;
-    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-top: none;
   }
 
   & .form__legend {
