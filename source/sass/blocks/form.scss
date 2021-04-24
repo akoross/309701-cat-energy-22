@@ -461,9 +461,6 @@
   }
 
   &:nth-child(2n + 1) {
-    @media (min-width: $width-tablet) {
-    }
-
     @media (min-width: $width-desktop) {
       width: 221px;
     }
