@@ -7,10 +7,6 @@
 
   @media (min-width: $width-tablet) {
     border: none;
-    overflow: visible;
-  }
-
-  @media (min-width: $width-desktop) {
     overflow: hidden;
   }
 }
@@ -46,23 +42,6 @@
     padding: 77px 110px 0 110px;
     transform: translate(5px);
     max-width: 100vw;
-  }
-}
-
-.form--grid {
-  @media (min-width: $width-desktop) {
-    display: grid;
-    grid-auto-columns: 568px 568px;
-    grid-template-rows: 200px;
-    justify-content: center;
-    column-gap: 80px;
-  }
-}
-
-.form--center {
-  @media (min-width: $width-desktop) {
-    width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -112,7 +91,7 @@
     line-height: 36px;
     padding: 0 42px 0 30px;
     left: -30px;
-    max-width: 593px;
+    max-width: max-content;
     margin-bottom: 76px;
   }
 
@@ -121,28 +100,32 @@
   }
 
   &::before {
-    @media (min-width: $width-desktop) {
+    @media (min-width: $width-tablet) {
       content: "";
       position: absolute;
       top: 50%;
       width: 100vw;
       right: 0;
-      height: 3px;
+      height: 2px;
       background: $basic_green;
       z-index: -1;
     }
   }
 
   &::after {
-    @media (min-width: $width-desktop) {
+    @media (min-width: $width-mobile) {
       content: "";
       position: absolute;
       top: 50%;
       width: 100vw;
       left: 20px;
-      height: 3px;
+      height: 2px;
       background: $basic_green;
       z-index: -1;
+    }
+
+    @media (min-width: $width-tablet) {
+      left: 40px;
     }
   }
 }
@@ -182,7 +165,7 @@
 
   @media (min-width: $width-desktop) {
     grid-column: 2 / 3;
-    width: 535px;
+    width: 540px;
     padding-bottom: 0;
     min-height: 175px;
     min-width: 0;
@@ -260,26 +243,31 @@
 
 .form__contact {
   @include reset-fieldset;
-  padding: 26px 0 0 0;
   min-width: 320px;
   width: 100vw;
-  border-top: 2px solid $basic_green;
 
   @media (min-width: $width-tablet) {
-    width: calc(100vw - 71px);
-    transform: translate(-71px);
-    padding: 0 0 0 71px;
+    width: 100%;
+    padding: 0;
     margin: 0 0 65px 0;
+    border: none;
   }
 
   @media (min-width: $width-desktop) {
-    width: 100%;
+    padding: 0;
     margin: 69px auto 69px auto;
-    display: flex;
-    column-gap: 78px;
-    align-items: center;
-    justify-content: space-between;
     border-top: none;
+  }
+
+  & .leveler {
+    @media (min-width: $width-desktop) {
+      width: 1220px;
+      display: flex;
+      flex-wrap: nowrap;
+      column-gap: 78px;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -293,7 +281,6 @@
   position: relative;
 
   @media (min-width: $width-tablet) {
-    width: calc(100% - 71px);
     min-width: 630px;
     padding-right: 0;
   }
@@ -371,15 +358,13 @@
 .form__comment {
   @include reset-fieldset;
   width: 100vw;
-  min-width: 320px;
-  padding: 26px $padding-mobile * 2 0 0;
+  padding: 26px 0 0 0;
   margin-top: 32px;
-  border-top: 2px solid $basic_green;
 
   @media (min-width: $width-tablet) {
-    width: calc(100vw - 71px);
-    transform: translate(-71px);
-    padding: 0 0 0 71px;
+    width: 100vw;
+    padding: 0 0 0 0;
+    border: none;
   }
 
   @media (min-width: $width-desktop) {
@@ -393,32 +378,32 @@
     padding-top: 0;
     top: -5px;
   }
+}
 
-  & textarea {
-    width: calc(100% - 60px);
-    text-transform: uppercase;
-    font-family: $font-site;
-    font-size: 16px;
-    line-height: 18px;
-    padding: 10px;
-    border-color: $special_grey;
-    resize: none;
-    height: 150px;
-    outline: none;
+.form__comment-text {
+  width: calc(100% - 60px);
+  text-transform: uppercase;
+  font-family: $font-site;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 10px;
+  border-color: $special_grey;
+  resize: none;
+  height: 150px;
+  outline: none;
 
-    @media (min-width: $width-tablet) {
-      height: 174px;
-      width: calc(100% - 111px);
-      font-size: 20px;
-      line-height: 30px;
-      color: $special_dark-grey-1;
-      margin: 0 0 65px 0;
-      padding: 10px 19px;
-    }
+  @media (min-width: $width-tablet) {
+    height: 174px;
+    width: calc(100% - 179px);
+    font-size: 20px;
+    line-height: 30px;
+    color: $special_dark-grey-1;
+    margin: 0 0 65px 0;
+    padding: 10px 19px;
+  }
 
-    @media (min-width: $width-desktop) {
-      width: 1180px;
-    }
+  @media (min-width: $width-desktop) {
+    width: 1170px;
   }
 }
 
@@ -426,24 +411,34 @@
   @include reset-fieldset;
   width: 100vw;
   min-width: 320px;
-  padding: 26px $padding-mobile * 2 0 0;
   margin-top: 32px;
-  border-top: 2px solid $basic_green;
+
+  & .leveler {
+    @media (min-width: $width-tablet) {
+      display: flex;
+      column-gap: 123px;
+      flex-wrap: wrap;
+    }
+
+    @media (min-width: $width-desktop) {
+      flex-wrap: nowrap;
+      column-gap: 78px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
 
   @media (min-width: $width-tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 123px;
-    padding: 0 0 54px 71px;
-    transform: translate(-71px);
-    width: calc(100vw - 71px);
+    margin-bottom: 54px;
   }
 
   @media (min-width: $width-desktop) {
-    column-gap: 95px;
-    width: 100%;
-    flex-wrap: nowrap;
     border-top: none;
+    margin-bottom: 54px;
+
+    & .container {
+      transform: translate(-110px);
+    }
   }
 
   & .form__legend {
@@ -458,7 +453,7 @@
 
   @media (min-width: $width-tablet) {
     margin: 0 0 32px 0;
-    width: 221px;
+    width: 225px;
   }
 
   @media (min-width: $width-desktop) {
@@ -467,8 +462,6 @@
 
   &:nth-child(2n + 1) {
     @media (min-width: $width-tablet) {
-      padding-left: 30px;
-      width: calc(50% - 30px);
     }
 
     @media (min-width: $width-desktop) {

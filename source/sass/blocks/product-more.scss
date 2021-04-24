@@ -1,5 +1,8 @@
 .product-more__wrapper {
-  width: $width-mobile - $padding-mobile * 2;
+  min-width: 280px;
+  width: calc(100vw - 40px);
+  // transform: translate(-20px);
+  padding: 0 $padding-mobile;
 
   @media (min-width: $width-tablet) {
     max-width: $width-tablet;
@@ -16,12 +19,13 @@
 
 .product-more__title {
   position: relative;
-  width: 248px;
+  width: max-content;
   font-family: $font-site;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
-  padding: 25px 0 36px 0;
+  padding: 25px 20px 36px 20px;
+  left: -20px;
   margin: 0;
   background: #ffffff;
 
@@ -45,13 +49,13 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 100vw;
     height: 2px;
     background: $basic_green;
 
     @media (min-width: $width-tablet) {
-      width: 2500px;
-      transform: translate(-$width-tablet);
+      // width: 2500px;
+      // transform: translate(-$width-tablet);
     }
   }
 }
@@ -80,7 +84,8 @@
   align-items: center;
   text-align: center;
   margin: 0 0 35px 0;
-  background: url("../../img/gift-photo-mobile-1.png");
+  background: url("../../img/gift-photo-mobile-1.png") no-repeat center center;
+  background-size: cover;
 
   @media (min-width: $width-tablet) {
     margin-top: 69px;
