@@ -1,10 +1,12 @@
 .grid {
   @media (min-width: $width-desktop) {
+    width: 1220px;
+    margin: 0 auto;
     display: grid;
-    grid-auto-columns: 568px 568px;
-    grid-template-rows: 200px;
-    justify-content: center;
-    justify-self: center;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: start;
+    justify-items: start;
+    justify-self: start;
     column-gap: 80px;
   }
 }

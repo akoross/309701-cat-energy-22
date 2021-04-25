@@ -64,17 +64,21 @@
 
         </fieldset>
         <fieldset class="form__check">
-          <div class="form__check-item">
-            <input class="form__check-item--radio" type="radio" name="program" id="smol-mass" checked disabled>
-            <label class="form__check-item--label" for="smol-mass">похудение</label>
-          </div>
-          <div class="form__check-item">
-            <input class="form__check-item--radio" type="radio" name="program" id="big-mass">
-            <label class="form__check-item--label" for="big-mass">Набор массы</label>
-          </div>
-          <div class="form__check-item">
-            <input class="form__check-item--radio" type="radio" name="program" id="other">
-            <label class="form__check-item--label" for="other">Не знаю (Нужен ваш совет)</label>
+          <div class="wrapper">
+            <div class="form__check--border">
+              <div class="form__check-item">
+                <input class="form__check-item--radio" type="radio" name="program" id="smol-mass" checked disabled>
+                <label class="form__check-item--label" for="smol-mass">похудение</label>
+              </div>
+              <div class="form__check-item">
+                <input class="form__check-item--radio" type="radio" name="program" id="big-mass">
+                <label class="form__check-item--label" for="big-mass">Набор массы</label>
+              </div>
+              <div class="form__check-item">
+                <input class="form__check-item--radio" type="radio" name="program" id="other">
+                <label class="form__check-item--label" for="other">Не знаю (Нужен ваш совет)</label>
+              </div>
+            </div>
           </div>
         </fieldset>
       </div>
@@ -157,8 +161,10 @@
         </div>
       </fieldset>
       <div class="form__submit">
-        <button type="submit" class="form__button button">отправить заявку</button>
-        <small class="form__smoll">* — Обязательные поля</small>
+        <div class="wrapper">
+          <button type="submit" class="form__button button">отправить заявку</button>
+          <small class="form__smoll">* — Обязательные поля</small>
+        </div>
       </div>
 
 
