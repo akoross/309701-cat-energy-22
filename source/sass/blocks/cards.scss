@@ -1,25 +1,17 @@
 .cards {
-  min-width: 320px;
   width: 100vw;
   border-top: 1px solid $special_grey-2;
   border-bottom: 1px solid $special_grey-2;
 
+  & .wrapper {
+    @media (max-width: $width-mobile-only) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
   @media (min-width: $width-tablet) {
-    min-width: none;
-    padding: 0 $padding-tablet;
     border: none;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop - $padding-desktop * 2;
-  }
-}
-
-.cards__wrapper {
-  margin: 0 auto;
-
-  @media (min-width: $width-tablet) {
-    margin: 0;
   }
 }
 
@@ -28,7 +20,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 0 41px 20px;
+  padding: 27px 0 41px $padding-mobile;
 
   @media (min-width: $width-tablet) {
     font-size: 60px;
@@ -40,20 +32,21 @@
 
 .cards__list {
   @include list;
-  width: 100%;
+  margin-bottom: 25px;
 
   @media (min-width: $width-tablet) {
-    width: 100%;
-    padding: 0 $padding-tablet;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     gap: 60px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $width-desktop) {
+    justify-content: space-between;
     gap: 63px;
+    margin-bottom: 75px;
   }
 }
 

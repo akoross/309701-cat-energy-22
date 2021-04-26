@@ -9,6 +9,13 @@
     border: none;
     overflow: hidden;
   }
+
+  & > .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+  }
 }
 
 .form__input-mail,
@@ -106,7 +113,7 @@
 
   @media (min-width: $width-tablet) {
     margin: 0 0 72px;
-    padding: 0 $padding-tablet;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -117,12 +124,6 @@
     display: inline-block;
     padding: 0;
     width: 100%;
-
-    & .wrapper {
-      min-width: none;
-      width: 568px;
-      padding: 0;
-    }
   }
 }
 
@@ -142,8 +143,15 @@
     grid-column: 2 / 3;
     min-width: 0;
     margin: 0;
+  }
 
-    & .wrapper {
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
       min-width: none;
       width: 568px;
       padding: 0;
@@ -175,6 +183,7 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 30px;
+    width: max-content;
   }
 }
 
@@ -241,6 +250,13 @@
     margin: 69px auto;
   }
 
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+  }
+
   & .leveler {
     @media (min-width: $width-desktop) {
       display: flex;
@@ -262,7 +278,6 @@
 
   @media (min-width: $width-tablet) {
     min-width: 630px;
-    padding-right: 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -341,13 +356,16 @@
   margin-top: 32px;
   border-top: 2px solid $basic_green;
 
-  @media (min-width: $width-tablet) {
-    padding: 0;
-  }
-
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: center;
+  }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
   }
 }
 
@@ -385,6 +403,21 @@
   margin-top: 32px;
   border-top: 2px solid $basic_green;
 
+  @media (min-width: $width-tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 54px;
+  }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+  }
+
   & .leveler {
     @media (min-width: $width-tablet) {
       display: flex;
@@ -398,14 +431,6 @@
       align-items: center;
       justify-content: flex-start;
     }
-  }
-
-  @media (min-width: $width-tablet) {
-    margin-bottom: 54px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin-bottom: 54px;
   }
 }
 
@@ -479,6 +504,8 @@
 .form__submit {
   & .wrapper {
     @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 61px;
@@ -510,7 +537,6 @@
 
   @media (min-width: $width-desktop) {
     width: 568px;
-    margin: 0 81px 0;
   }
 }
 
