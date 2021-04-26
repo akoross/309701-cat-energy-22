@@ -1,10 +1,12 @@
 .cards {
-  width: 320px;
+  min-width: 320px;
+  width: 100vw;
   border-top: 1px solid $special_grey-2;
   border-bottom: 1px solid $special_grey-2;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet - $padding-tablet * 2;
+    min-width: none;
+    padding: 0 $padding-tablet;
     border: none;
   }
 
@@ -14,11 +16,10 @@
 }
 
 .cards__wrapper {
-  transform: translate(-40px);
-  padding: 0 $padding-mobile;
+  margin: 0 auto;
 
   @media (min-width: $width-tablet) {
-    transform: translate(-20px);
+    margin: 0;
   }
 }
 
@@ -39,10 +40,11 @@
 
 .cards__list {
   @include list;
-  width: 320px;
+  width: 100%;
 
   @media (min-width: $width-tablet) {
     width: 100%;
+    padding: 0 $padding-tablet;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

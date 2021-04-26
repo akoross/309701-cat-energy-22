@@ -173,6 +173,15 @@
   color: $special_dark-grey-1;
   background-color: $basic_grey;
 
+  &:hover {
+    background: #ebebeb;
+  }
+
+  &:active {
+    color: #444444;
+    opacity: 0.3;
+  }
+
   @media (min-width: $width-tablet) {
     grid-row: 4 / 5;
     grid-column: 1 / 2;

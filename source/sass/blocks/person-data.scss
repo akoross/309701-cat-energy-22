@@ -1,29 +1,20 @@
 .person-data {
-  padding: 0 20px 0 20px;
-  width: 280px;
+  min-width: 280px;
   color: $special_dark-grey-1;
-
-  @media (min-width: $width-tablet) {
-    width: 100%;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 570px;
-  }
 }
 
 .person-data__item {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 0 0 13px 0;
+  margin: 0 0 13px;
 
   &:last-child {
     margin: 0;
   }
 
   @media (min-width: $width-tablet) {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
   }
 }
 
@@ -50,5 +41,15 @@
 
   @media (min-width: $width-desktop) {
     height: 52px;
+  }
+
+  &:hover {
+    border-color: $special_grey;
+  }
+
+  &:focus {
+    border-color: $special_dark-grey-1;
+    border-width: 2px;
+    outline: none;
   }
 }
