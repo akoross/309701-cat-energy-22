@@ -1,16 +1,12 @@
 .special__wrapper {
-  padding: 0 0 42px 0;
+  padding-bottom: 42px;
 
   @media (min-width: $width-tablet) {
-    width: 100%;
-    padding: 45px 0 9px 0;
     border-bottom: 1px solid $special_grey-2;
   }
 
   @media (min-width: $width-desktop) {
-    margin: 0 auto;
-    width: $width-desktop - $padding-desktop * 2;
-    padding: 71px $padding-desktop 11px;
+    padding: 71px 0 11px;
     border: none;
   }
 }
@@ -20,14 +16,12 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  padding: 0 $padding-mobile;
-  margin: 0 0 38px 0;
+  margin: 0 0 38px;
 
   @media (min-width: $width-tablet) {
-    padding-left: $padding-tablet;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px;
   }
 
   @media (min-width: $width-desktop) {
@@ -38,13 +32,12 @@
 .special__list {
   @include list;
   counter-reset: count;
-  padding: 0 $padding-mobile;
 
   @media (min-width: $width-tablet) {
-    padding: 0 $padding-tablet;
     display: flex;
     justify-content: flex-start;
     column-gap: 153px;
+    row-gap: 37px;
     flex-wrap: wrap;
   }
 
@@ -58,7 +51,7 @@
 
 .special__item {
   display: flex;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
   color: $special_dark-grey-1;
   position: relative;
   counter-increment: count;
@@ -66,15 +59,15 @@
   @media (min-width: $width-tablet) {
     flex-direction: column;
     width: 245px;
-    height: 183px;
-    padding: 40px 0 57px 0;
+    padding: 40px 0 57px;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 0 37px 0;
+    margin: 0 0 37px;
   }
 
   @media (min-width: $width-desktop) {
     margin: 0;
+    row-gap: 30px;
   }
 
   &::after {

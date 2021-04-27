@@ -1,15 +1,15 @@
 .wrapper {
-  min-width: $width-mobile - $padding-mobile * 2;
+  min-width: $width-mobile;
   margin: 0 auto;
   padding: 0 $padding-mobile;
 
   @media (min-width: $width-tablet) {
-    min-width: $width-tablet - $padding-tablet * 2;
+    min-width: $width-tablet;
     padding: 0 $padding-tablet;
   }
 
   @media (min-width: $width-desktop) {
-    max-width: $width-desktop - $padding-desktop * 2;
+    max-width: $width-desktop;
     padding: 0 $padding-desktop;
   }
 }
