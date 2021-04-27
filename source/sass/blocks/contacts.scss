@@ -2,7 +2,7 @@
   min-width: 320px;
 
   @media (min-width: $width-desktop) {
-    background: url("./../img/man-desktop.svg") no-repeat;
+    background: url("./../../img/man-desktop.svg") no-repeat;
     background-size: cover;
   }
 }
@@ -88,13 +88,13 @@
 
 .contacts__location {
   min-height: 362px;
-  background: url("./../img/map.svg") no-repeat;
+  background: url("./../../img/map.svg") no-repeat;
   background-size: cover;
   position: relative;
 
   @media (min-width: $width-tablet) {
     min-height: 400px;
-    background-image: url("./../img/map-tablet.svg");
+    background-image: url("./../../img/map-tablet.svg");
   }
 
   @media (min-width: $width-desktop) {
