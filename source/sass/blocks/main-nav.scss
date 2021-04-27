@@ -8,9 +8,7 @@
   }
 
   .main-nav__list {
-    width: 100vw;
     display: none;
-    transform: translateX(-$padding-mobile);
 
     & .link {
       font-weight: 500;
@@ -34,7 +32,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -48px;
-  right: 0;
+  right: 20px;
   border: none;
   outline: none;
   width: 24px;

@@ -1,6 +1,9 @@
 .page-header__wrapper {
-  padding: 0 $padding-mobile;
-  overflow: visible;
+  @media (max-width: $width-mobile-only) {
+    min-width: $width-mobile;
+    width: 100%;
+    padding: 0;
+  }
 
   @media (min-width: $width-tablet) {
     padding: 0 $padding-tablet;

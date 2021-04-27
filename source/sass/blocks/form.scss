@@ -195,7 +195,8 @@
 
   &:checked + .form__check-item--label::before {
     content: "";
-    background: url("./../../img/radiobutton-active.svg") no-repeat center center;
+    background: url("./../../img/radiobutton-active.svg") no-repeat center
+      center;
 
     @media (min-width: $width-tablet) {
       background-size: 18px 18px;
@@ -239,7 +240,6 @@
 .form__contact {
   @include reset-fieldset;
   min-width: $width-mobile;
-  width: 100vw;
   border-top: 2px solid $basic_green;
   z-index: -1;
 
@@ -359,7 +359,6 @@
 
 .form__comment {
   @include reset-fieldset;
-  width: 100vw;
   margin-top: 32px;
   border-top: 2px solid $basic_green;
 
@@ -405,7 +404,6 @@
 
 .form__options {
   @include reset-fieldset;
-  width: 100vw;
   min-width: 320px;
   margin-top: 32px;
   border-top: 2px solid $basic_green;

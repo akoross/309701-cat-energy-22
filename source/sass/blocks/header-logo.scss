@@ -1,7 +1,10 @@
 .header-logo {
   cursor: pointer;
+  position: relative;
+  left: 20px;
 
   @media (min-width: $width-tablet) {
+    left: 0;
     background: url("./../../img/logo-tablet.svg") no-repeat 0 center;
   }
 
