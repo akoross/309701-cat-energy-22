@@ -3,8 +3,8 @@
   color: #ffffff;
   font-family: $font-site;
   position: relative;
-  background: url("./../../img/Rectangle-18.png") no-repeat 0 0 / 100% 302px,
-    url("./../../img/index-background-desktop-2.png") no-repeat center 0 / 320px;
+  background: url("./../img/Rectangle-18.png") no-repeat 0 0 / 100% 302px,
+    url("./../img/index-background-desktop-2.png") no-repeat center 0 / 320px;
 
   @media (min-width: $width-tablet) {
     background: none;
@@ -37,8 +37,8 @@
       display: block;
       min-width: 720px;
       height: 694px;
-      background: url("./../../img/bg-promo-desktop.png"),
-        url("./../../img/bg-promo-desktop-img.png") no-repeat;
+      background: url("./../img/bg-promo-desktop.png"),
+        url("./../img/bg-promo-desktop-img.png") no-repeat;
       background-size: contain;
       right: -$padding-desktop;
       top: -112px;

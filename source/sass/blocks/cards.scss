@@ -56,6 +56,7 @@
 
   @media (min-width: $width-tablet) {
     width: 322px;
+    height: 510px;
     padding: 8px 0 40px 0;
     border: none;
     background: linear-gradient(to top, $special_grey-2 429px, #ffffff 429px);
@@ -68,10 +69,16 @@
 
   &:last-child {
     @media (min-width: $width-tablet) {
-      height: 389px;
+      height: 429px;
       padding-top: 0;
       border: 1px solid $special_grey-2;
       background: none;
+    }
+
+    & .card__wrapper {
+      @media (min-width: $width-tablet) {
+        gap: 0;
+      }
     }
   }
 }

@@ -195,8 +195,7 @@
 
   &:checked + .form__check-item--label::before {
     content: "";
-    background: url("./../../img/radiobutton-active.svg") no-repeat center
-      center;
+    background: url("./../img/radiobutton-active.svg") no-repeat center center;
 
     @media (min-width: $width-tablet) {
       background-size: 18px 18px;
@@ -473,7 +472,7 @@
 
   &:checked + .form__options-check--label::before {
     content: "";
-    background: url("./../../img/ok.svg") no-repeat center center;
+    background: url("./../img/ok.svg") no-repeat center center;
   }
 
   &:disabled + .form__options-check--label {
