@@ -1,25 +1,17 @@
 .cards {
-  min-width: 320px;
-  width: 100vw;
+  min-width: $width-mobile;
   border-top: 1px solid $special_grey-2;
   border-bottom: 1px solid $special_grey-2;
 
+  & .wrapper {
+    @media (max-width: $width-mobile-only) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
   @media (min-width: $width-tablet) {
-    min-width: none;
-    padding: 0 $padding-tablet;
     border: none;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop - $padding-desktop * 2;
-  }
-}
-
-.cards__wrapper {
-  margin: 0 auto;
-
-  @media (min-width: $width-tablet) {
-    margin: 0;
   }
 }
 
@@ -28,7 +20,7 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 0 41px 20px;
+  padding: 27px 0 41px $padding-mobile;
 
   @media (min-width: $width-tablet) {
     font-size: 60px;
@@ -40,45 +32,50 @@
 
 .cards__list {
   @include list;
-  width: 100%;
+  margin-bottom: 25px;
 
   @media (min-width: $width-tablet) {
-    width: 100%;
-    padding: 0 $padding-tablet;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
     align-items: flex-end;
-    gap: 60px;
+    grid-gap: 60px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $width-desktop) {
-    gap: 63px;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-gap: 63px;
+    margin-bottom: 75px;
   }
 }
 
 .cards__item {
   border-top: 1px solid $special_grey-2;
-  padding: 20px 20px 25px 20px;
+  padding: 20px 20px 25px;
 
   @media (min-width: $width-tablet) {
-    width: 322px;
-    padding: 8px 0 40px 0;
+    height: 510px;
+    padding: 8px 0 0;
     border: none;
     background: linear-gradient(to top, $special_grey-2 429px, #ffffff 429px);
   }
 
   @media (min-width: $width-desktop) {
-    width: 245px;
-    padding: 0 0 40px 0;
+    padding: 0;
   }
 
   &:last-child {
     @media (min-width: $width-tablet) {
-      height: 389px;
-      padding-top: 0;
+      height: 429px;
+      padding: 0;
       border: 1px solid $special_grey-2;
       background: none;
+    }
+
+    & .card__wrapper {
+      @media (min-width: $width-tablet) {
+        gap: 0;
+      }
     }
   }
 }

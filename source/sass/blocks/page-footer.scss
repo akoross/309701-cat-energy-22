@@ -1,25 +1,18 @@
 .page-footer {
-  min-width: 320px;
+  min-width: $width-mobile;
   background-color: $basic_grey;
 }
 
 .page-footer__wrapper {
-  min-width: $width-mobile;
-  padding: 39px 0 22px 0;
+  padding: 39px 0 22px;
 
   @media (min-width: $width-tablet) {
-    width: $width-tablet - $padding-tablet * 2;
     height: 150px;
-    padding: 0 $padding-tablet;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: $width-desktop - $padding-desktop * 2;
-    padding: 0 $padding-desktop;
   }
 }
 

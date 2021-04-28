@@ -8,9 +8,7 @@
   }
 
   .main-nav__list {
-    width: 100vw;
     display: none;
-    transform: translateX(-$padding-mobile);
 
     & .link {
       font-weight: 500;
@@ -26,7 +24,6 @@
   }
 
   @media (min-width: $width-tablet) {
-    transform: translate(0);
     display: flex;
     align-content: center;
   }
@@ -35,7 +32,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -48px;
-  right: 0;
+  right: 20px;
   border: none;
   outline: none;
   width: 24px;
@@ -49,9 +46,9 @@
 }
 
 .main-nav__toggle--burger {
-  background: url("../../img/burger.svg") no-repeat center center;
+  background: url("../img/burger.svg") no-repeat center center;
 }
 
 .main-nav__toggle--clossed {
-  background: url("../../img/clossed.svg") no-repeat center center;
+  background: url("../img/clossed.svg") no-repeat center center;
 }

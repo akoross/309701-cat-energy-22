@@ -1,19 +1,22 @@
 .header-logo {
   cursor: pointer;
+  position: relative;
+  left: 20px;
 
   @media (min-width: $width-tablet) {
-    background: url("../../img/logo-tablet.svg") no-repeat 0 center;
+    left: 0;
+    background: url("../img/logo-tablet.svg") no-repeat 0 center;
   }
 
   @media (min-width: $width-desktop) {
-    background: url("../../img/logo-desktop.svg") no-repeat bottom 0 center;
+    background: url("../img/logo-desktop.svg") no-repeat bottom 0 center;
 
     &:hover {
-      background-image: url("../../img/logo-desktop-hover.svg");
+      background-image: url("../img/logo-desktop-hover.svg");
     }
 
     &:active {
-      background-image: url("../../img/logo-desktop-pressed.svg");
+      background-image: url("../img/logo-desktop-pressed.svg");
     }
   }
 }

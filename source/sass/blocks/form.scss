@@ -1,5 +1,5 @@
 .form {
-  min-width: 320px;
+  min-width: $width-mobile;
   font-family: $font-site;
   text-transform: uppercase;
   border-top: 1px solid $special_grey;
@@ -8,6 +8,18 @@
   @media (min-width: $width-tablet) {
     border: none;
     overflow: hidden;
+  }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      min-width: $width-desktop;
+      padding: 0 $padding-desktop;
+    }
   }
 }
 
@@ -79,7 +91,6 @@
   line-height: 26px;
   max-width: 220px;
   padding: 18px 14px 0 20px;
-  margin-bottom: 25px;
   position: relative;
   background-color: #ffffff;
   top: -35px;
@@ -106,7 +117,7 @@
 
   @media (min-width: $width-tablet) {
     margin: 0 0 72px;
-    padding: 0 $padding-tablet;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -117,12 +128,6 @@
     display: inline-block;
     padding: 0;
     width: 100%;
-
-    & .wrapper {
-      min-width: none;
-      width: 568px;
-      padding: 0;
-    }
   }
 }
 
@@ -142,8 +147,15 @@
     grid-column: 2 / 3;
     min-width: 0;
     margin: 0;
+  }
 
-    & .wrapper {
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
       min-width: none;
       width: 568px;
       padding: 0;
@@ -161,12 +173,11 @@
 
   @media (min-width: $width-desktop) {
     min-height: 173px;
-    width: 540px;
+    width: 570px;
   }
 }
 
 .form__check-item {
-  height: 30px;
   font-size: 16px;
   line-height: 18px;
   padding: 12px 0;
@@ -175,6 +186,7 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 30px;
+    width: max-content;
   }
 }
 
@@ -183,7 +195,7 @@
 
   &:checked + .form__check-item--label::before {
     content: "";
-    background: url("../../img/radiobutton-active.svg") no-repeat center center;
+    background: url("../img/radiobutton-active.svg") no-repeat center center;
 
     @media (min-width: $width-tablet) {
       background-size: 18px 18px;
@@ -226,19 +238,29 @@
 
 .form__contact {
   @include reset-fieldset;
-  min-width: 320px;
-  width: 100vw;
+  min-width: $width-mobile;
   border-top: 2px solid $basic_green;
   z-index: -1;
 
   @media (min-width: $width-tablet) {
-    width: 100%;
     margin: 0 0 65px;
   }
 
   @media (min-width: $width-desktop) {
     padding: 0;
     margin: 69px auto;
+  }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      min-width: $width-desktop;
+      padding: 0 $padding-desktop;
+    }
   }
 
   & .leveler {
@@ -262,7 +284,6 @@
 
   @media (min-width: $width-tablet) {
     min-width: 630px;
-    padding-right: 0;
   }
 
   @media (min-width: $width-desktop) {
@@ -337,22 +358,29 @@
 
 .form__comment {
   @include reset-fieldset;
-  width: 100vw;
   margin-top: 32px;
   border-top: 2px solid $basic_green;
-
-  @media (min-width: $width-tablet) {
-    padding: 0;
-  }
 
   @media (min-width: $width-desktop) {
     display: flex;
     justify-content: center;
   }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      min-width: $width-desktop;
+      padding: 0 $padding-desktop;
+    }
+  }
 }
 
 .form__comment-text {
-  width: calc(100% - 20px);
+  width: 100%;
   text-transform: uppercase;
   font-family: $font-site;
   font-size: 16px;
@@ -365,30 +393,43 @@
 
   @media (min-width: $width-tablet) {
     height: 174px;
-    width: calc(100% - 38px);
     font-size: 20px;
     line-height: 30px;
     color: $special_dark-grey-1;
-    margin: 0 0 65px 0;
+    margin: 0 0 65px;
     padding: 10px 19px;
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 1170px;
   }
 }
 
 .form__options {
   @include reset-fieldset;
-  width: 100vw;
   min-width: 320px;
   margin-top: 32px;
   border-top: 2px solid $basic_green;
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 54px;
+  }
+
+  & .wrapper {
+    @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
+    }
+
+    @media (min-width: $width-desktop) {
+      min-width: $width-desktop;
+      padding: 0 $padding-desktop;
+    }
+  }
 
   & .leveler {
     @media (min-width: $width-tablet) {
       display: flex;
       column-gap: 123px;
+      row-gap: 32px;
+      margin-top: 34px;
+      margin-bottom: 54px;
       flex-wrap: wrap;
     }
 
@@ -398,14 +439,6 @@
       align-items: center;
       justify-content: flex-start;
     }
-  }
-
-  @media (min-width: $width-tablet) {
-    margin-bottom: 54px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin-bottom: 54px;
   }
 }
 
@@ -439,7 +472,7 @@
 
   &:checked + .form__options-check--label::before {
     content: "";
-    background: url("../../img/ok.svg") no-repeat center center;
+    background: url("../img/ok.svg") no-repeat center center;
   }
 
   &:disabled + .form__options-check--label {
@@ -479,12 +512,15 @@
 .form__submit {
   & .wrapper {
     @media (min-width: $width-tablet) {
+      min-width: $width-tablet - 140px;
+      padding: 0 70px;
       display: flex;
       flex-wrap: wrap;
       column-gap: 61px;
     }
 
     @media (min-width: $width-desktop) {
+      padding: 0 $padding-desktop;
       display: flex;
       flex-wrap: wrap;
       column-gap: 61px;
@@ -510,7 +546,6 @@
 
   @media (min-width: $width-desktop) {
     width: 568px;
-    margin: 0 81px 0;
   }
 }
 
