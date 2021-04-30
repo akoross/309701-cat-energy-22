@@ -36,17 +36,15 @@
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    column-gap: 153px;
-    row-gap: 37px;
-    // flex-wrap: wrap;
+    grid-column-gap: 153px;
+    grid-row-gap: 37px;
   }
 
   @media (min-width: $width-desktop) {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     padding: 0;
+    grid-column-gap: 94px;
     column-gap: 94px;
-    // flex-direction: row;
-    // flex-wrap: nowrap;
   }
 }
 
