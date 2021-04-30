@@ -34,18 +34,19 @@
   counter-reset: count;
 
   @media (min-width: $width-tablet) {
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
     column-gap: 153px;
     row-gap: 37px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
   }
 
   @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     padding: 0;
     column-gap: 94px;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    // flex-direction: row;
+    // flex-wrap: nowrap;
   }
 }
 
