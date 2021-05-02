@@ -520,7 +520,7 @@
     }
 
     @media (min-width: $width-desktop) {
-      padding: 0 $padding-desktop;
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
       column-gap: 61px;

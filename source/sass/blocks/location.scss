@@ -17,8 +17,7 @@
 
   @media (min-width: $width-desktop) {
     top: 131px;
-    transform: translate(0);
-    left: 908px;
-    z-index: 1000;
+    transform: translate(150px);
+    right: 0;
   }
 }
