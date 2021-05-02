@@ -66,6 +66,11 @@
   background: url("../img/gift-photo-mobile-1.png") no-repeat center center;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background: url("../img/gift-photo-mobile-1@2.png") no-repeat center center;
+    background-size: cover;
+  }
+
   @media (min-width: $width-tablet) {
     margin-top: 69px;
     margin-bottom: 76px;
@@ -74,6 +79,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: row;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-photo-tablet@2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $width-desktop) {
@@ -84,6 +95,11 @@
     grid-column: 2 / 3;
     margin: 0;
     flex-direction: column;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/gift-photo-desktop@2.png") no-repeat;
+      background-size: cover;
+    }
   }
 }
 

@@ -1,10 +1,8 @@
 const contactsLocation = document.querySelector(".contacts__location");
 contactsLocation.classList.remove("contacts__location--bg");
-document
-  .querySelector(".location__marker")
-  .classList.remove("location__marker");
+
 let map;
-const adress = { lat: 59.93843667777682, lng: 30.323060824012792 };
+const adress = { lat: 59.938715, lng: 30.32306 };
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
