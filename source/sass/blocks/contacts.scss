@@ -1,14 +1,5 @@
 .contacts {
   min-width: 320px;
-
-  @media (min-width: $width-desktop) {
-    @media (min-resolution: 2dppx) {
-      background: url("../img/rectangle-desktop@2.png") no-repeat;
-      background-size: 100%;
-    }
-    background: url("../img/rectangle-desktop.png") no-repeat;
-    background-size: cover;
-  }
 }
 
 .contacts__wrapper {
@@ -23,7 +14,6 @@
     display: flex;
     align-items: center;
     position: relative;
-    background-size: cover;
   }
 }
 
@@ -52,8 +42,8 @@
     align-items: center;
     position: absolute;
     top: 95px;
-    left: $padding-desktop;
-    z-index: 100;
+    left: 0;
+    z-index: 10000;
   }
 }
 
@@ -92,7 +82,10 @@
 
 .contacts__location {
   min-height: 362px;
+  z-index: -1;
+}
 
+.contacts__location--bg {
   @media (min-resolution: 2dppx) {
     background: url("../img/rectangle-mobile@2.png") no-repeat;
     background-size: 100%;
@@ -114,6 +107,13 @@
   }
 
   @media (min-width: $width-desktop) {
-    background: none;
+    width: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/rectangle-desktop@2.png") no-repeat;
+      background-size: 100%;
+    }
+    background: url("../img/rectangle-desktop.png") no-repeat;
+    background-size: cover;
   }
 }
