@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   font-style: normal;
-  background: $special_grey-2;
+  background: $basic_grey;
 
   &--index {
     background: #ffffff;
@@ -88,10 +88,12 @@
 .contacts__location--bg {
   @media (min-resolution: 2dppx) {
     background: url("../img/rectangle-mobile@2.png") no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
   }
   background: url("../img/rectangle-mobile.png") no-repeat;
   background-size: cover;
+  background-position: center;
   position: relative;
 
   @media (min-width: $width-tablet) {
@@ -99,11 +101,13 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/rectangle-tablet@2.png") no-repeat;
-      background-size: 100%;
+      background-size: cover;
+      background-position: center;
     }
 
     background: url("../img/rectangle-tablet.png") no-repeat;
     background-size: cover;
+    background-position: center;
   }
 
   @media (min-width: $width-desktop) {
@@ -111,9 +115,11 @@
 
     @media (min-resolution: 2dppx) {
       background: url("../img/rectangle-desktop@2.png") no-repeat;
-      background-size: 100%;
+      background-size: cover;
+      background-position: center;
     }
     background: url("../img/rectangle-desktop.png") no-repeat;
     background-size: cover;
+    background-position: center;
   }
 }
