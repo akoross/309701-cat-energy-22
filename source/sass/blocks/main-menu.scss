@@ -18,7 +18,7 @@
 
 .main-menu__item {
   @media (max-width: $width-tablet - 1px) {
-    padding: 22px 0 24px;
+    padding: 22px 0 22px;
     border-top: 1px solid $special_grey-2;
   }
 
@@ -26,10 +26,13 @@
     margin-right: 34px;
     border: none;
     height: 100%;
+  }
 
-    &:last-child {
+  &:last-child {
+    @media (min-width: $width-tablet) {
       margin-right: 0;
       text-align: right;
+      padding-left: 3px;
     }
   }
 }
@@ -45,6 +48,8 @@
   &--index {
     @media (min-width: $width-desktop) {
       color: #ffffff;
+      font-size: 20px;
+      line-height: 30px;
     }
   }
 

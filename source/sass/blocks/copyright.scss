@@ -7,26 +7,33 @@
 }
 
 .copyright__link {
-  color: $special_dark-grey-1;
-  padding: 0 20px;
+  color: #666666;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $width-tablet) {
-    padding: 0;
+    padding: 0 0 10px 5px;
     width: 169px;
     font-size: 16px;
     line-height: 18px;
   }
 
-  &:hover {
-    svg path {
-      fill: $basic_green;
-    }
+  @media (min-width: $width-desktop) {
+    position: relative;
+    top: 5px;
+  }
+
+  &:hover svg {
+    color: #68b738;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__text {
+  width: 114px;
+  font-size: 16px;
 }

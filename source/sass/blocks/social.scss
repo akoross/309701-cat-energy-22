@@ -1,4 +1,5 @@
 .social {
+  color: #666666;
   display: flex;
   justify-content: space-evenly;
 
@@ -6,22 +7,22 @@
     width: 129px;
     justify-content: space-between;
   }
+
+  @media (min-width: $width-desktop) {
+    position: relative;
+    top: 5px;
+  }
 }
 
 .social__link {
   &:hover {
-    svg path {
-      fill: $basic_green;
-      stroke-width: 1;
-    }
+    color: #68b738;
   }
 
   &--fb {
     &:hover {
-      svg path {
-        stroke: $basic_green;
-        fill: none;
-      }
+      stroke: #68b738;
+      fill: none;
     }
   }
 
