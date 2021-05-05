@@ -3,6 +3,7 @@
     min-width: $width-mobile;
     width: 100%;
     padding: 0;
+    margin-bottom: 3px;
   }
 
   @media (min-width: $width-tablet) {
@@ -11,7 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    height: 80px;
+    min-height: 76px;
   }
 
   @media (min-width: $width-desktop) {

@@ -1,5 +1,6 @@
 .selection__list {
   @include list;
+  margin-bottom: 10px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 45px;
@@ -13,7 +14,7 @@
 }
 
 .selection__item {
-  margin: 0 0 20px;
+  margin: 0 0 19px;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 30px;

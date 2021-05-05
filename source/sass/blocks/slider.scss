@@ -1,5 +1,14 @@
 .slider__list {
-  @include list(0, 0 0 23px 0);
+  @include list(0, 0 0 0 0);
+  margin-bottom: 18px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 20px;
+  }
 }
 
 .slider__item {
@@ -13,8 +22,13 @@
   }
 
   @media (min-width: $width-tablet) {
-    width: 708px;
-    height: 620px;
+    width: 680px;
+    height: 523px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 593px;
+    height: 510px;
   }
 }
 
