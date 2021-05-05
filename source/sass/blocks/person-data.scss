@@ -7,27 +7,40 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 0 0 13px;
+  margin: 0 0 15px;
 
   &:last-child {
     margin: 0;
   }
 
   @media (min-width: $width-tablet) {
-    margin: 0 0 20px;
+    margin: 0 0 21px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 19px;
   }
 }
 
 .person-data__label {
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 1px;
   margin: 0 13px 0 0;
   display: block;
   min-width: max-content;
+
+  @media (min-width: $width-tablet) {
+    font-size: 20px;
+    lih: 20px;
+    margin-right: 15px;
+  }
 }
 
 .person-data__input {
   width: 100%;
   height: 44px;
-  padding: 0 14px;
+  padding: 0 15px;
   border-radius: 0;
   border: 1px solid $special_grey-3;
   text-transform: uppercase;
@@ -37,6 +50,8 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 17px;
+    height: 51px;
   }
 
   @media (min-width: $width-desktop) {
