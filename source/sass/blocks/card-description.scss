@@ -1,8 +1,8 @@
 .card-description {
   width: 140px;
   border-spacing: 0;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 11px;
+  line-height: 14px;
   color: $special_dark-grey-1;
 
   @media (min-width: $width-tablet) {
@@ -13,6 +13,7 @@
 
   @media (min-width: $width-desktop) {
     width: 168px;
+    line-height: 28px;
   }
 
   td {

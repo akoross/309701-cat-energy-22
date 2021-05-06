@@ -348,25 +348,29 @@
   }
 
   &--focus {
+    color: #63b738;
+
     path {
-      stroke: $basic_green;
+      stroke: #63b738;
     }
 
     line {
-      fill: $basic_green;
-      stroke: $basic_green;
+      fill: #63b738;
+      stroke: #63b738;
     }
   }
 
   &--invalid {
-    path {
-      stroke: $status_error;
-    }
+    color: $status_error;
 
-    line {
-      fill: $status_error;
-      stroke: $status_error;
-    }
+    // path {
+    //   stroke: $status_error;
+    // }
+
+    // line {
+    //   fill: $status_error;
+    //   stroke: $status_error;
+    // }
   }
 }
 
