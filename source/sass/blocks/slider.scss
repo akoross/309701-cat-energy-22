@@ -41,28 +41,12 @@
   background-position: center left -10px;
   z-index: 1;
 
-  @media (min-resolution: 2dppx) {
-    background: url("./../img/before-mobile@2.png"), $basic_grey;
-    background-size: 310px 230px;
-    background-repeat: no-repeat;
-    background-position: center left -10px;
-    z-index: 1;
-  }
-
   @media (min-width: $width-tablet) {
     background: url("./../img/cat-fat.png"),
       linear-gradient(to top, $basic_grey 354px, #ffffff 354px);
     background-size: 710px 535px;
     background-repeat: no-repeat;
     background-position: center left -30px;
-
-    @media (min-resolution: 2dppx) {
-      background: url("./../img/cat-fat@2.png"),
-        linear-gradient(to top, $basic_grey 354px, #ffffff 354px);
-      background-size: 710px 535px;
-      background-repeat: no-repeat;
-      background-position: center left -30px;
-    }
   }
 
   @media (min-width: $width-desktop) {
@@ -74,24 +58,33 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("./../img/cat-fat@2.png"),
-      linear-gradient(to top, $basic_grey 338px, #ffffff 338px);
-    background-size: 610px 535px;
+    background: url("./../img/before-mobile@2.png"), $basic_grey;
+    background-size: 310px 230px;
     background-repeat: no-repeat;
-    background-position: center left -30px;
+    background-position: center left -10px;
+    z-index: 1;
+
+    @media (min-width: $width-tablet) {
+      background: url("./../img/cat-fat@2.png"),
+        linear-gradient(to top, $basic_grey 354px, #ffffff 354px);
+      background-size: 710px 535px;
+      background-repeat: no-repeat;
+      background-position: center left -30px;
+    }
+
+    @media (min-width: $width-desktop) {
+      background: url("./../img/cat-fat@2.png"),
+        linear-gradient(to top, $basic_grey 338px, #ffffff 338px);
+      background-size: 610px 535px;
+      background-repeat: no-repeat;
+      background-position: center left -30px;
+    }
   }
 }
 
 .slider__item--after {
   background: url("./../img/after-mobile.png"), $basic_grey;
   background-position: center right 25px;
-
-  @media (min-resolution: 2dppx) {
-    background: url("./../img/after-mobile@2.png"), $basic_grey;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center right 30px;
-  }
 
   @media (min-width: $width-tablet) {
     background: url("./../img/cat-skinny.png"),
@@ -100,15 +93,6 @@
     background-repeat: no-repeat;
     background-position: center right 30px;
     overflow: hidden;
-
-    @media (min-resolution: 2dppx) {
-      background: url("./../img/cat-skinny@2.png"),
-        linear-gradient(to top, $basic_grey 354px, #ffffff 354px);
-      background-size: 710px 535px;
-      background-repeat: no-repeat;
-      background-position: center right -15px;
-      overflow: hidden;
-    }
   }
 
   @media (min-width: $width-desktop) {
@@ -120,11 +104,27 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("./../img/cat-skinny@2.png"),
-      linear-gradient(to top, $basic_grey 338px, #ffffff 338px);
-    background-size: 610px 535px;
+    background: url("./../img/after-mobile@2.png"), $basic_grey;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center right -10px;
+    background-position: center right 30px;
+
+    @media (min-width: $width-tablet) {
+      background: url("./../img/cat-skinny@2.png"),
+        linear-gradient(to top, $basic_grey 354px, #ffffff 354px);
+      background-size: 710px 535px;
+      background-repeat: no-repeat;
+      background-position: center right -15px;
+      overflow: hidden;
+    }
+
+    @media (min-width: $width-desktop) {
+      background: url("./../img/cat-skinny@2.png"),
+        linear-gradient(to top, $basic_grey 338px, #ffffff 338px);
+      background-size: 610px 535px;
+      background-repeat: no-repeat;
+      background-position: center right -10px;
+    }
   }
 }
 
