@@ -34,6 +34,10 @@
     border-bottom: 1px dashed $special_grey;
     background: transparent;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .slider-toggles__scale {
@@ -126,5 +130,9 @@
       border: 1px solid #cdcdcd;
       box-shadow: 0 0 0 12px #ffffff, 0 0 3px 13px rgba(0, 0, 0, 0.16);
     }
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
