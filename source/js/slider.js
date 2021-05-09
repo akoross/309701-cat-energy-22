@@ -6,7 +6,7 @@ const buttonAfter = document.querySelector(".slider-toggles__button--after");
 sliderImage.style.width = rangeSlider.value + "%";
 
 rangeSlider.oninput = function () {
-  sliderImage.style.width = this.value + "%";
+  sliderImage.style.width = 100 - this.value + "%";
 };
 
 buttonBefore.addEventListener("click", () => {
