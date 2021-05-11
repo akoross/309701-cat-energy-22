@@ -43,7 +43,7 @@
   </header>
 
   <main>
-    <form class="form form__wrapper" id="data" method="POST">
+    <form class="form" id="data" method="POST">
       <div class="wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__subtitle">Заполните анкету, и мы подберем
@@ -71,18 +71,18 @@
         </fieldset>
         <fieldset class="form__check">
           <div class="wrapper">
-            <div class="form__check--border">
+            <div class="form__check-border">
               <div class="form__check-item">
-                <input class="form__check-item--radio" type="radio" name="program" id="smol-mass" checked disabled>
-                <label class="form__check-item--label" for="smol-mass">похудение</label>
+                <input class="form__check-item-radio" type="radio" name="program" id="smol-mass" checked disabled>
+                <label class="form__check-item-label" for="smol-mass">похудение</label>
               </div>
               <div class="form__check-item">
-                <input class="form__check-item--radio" type="radio" name="program" id="big-mass">
-                <label class="form__check-item--label" for="big-mass">Набор массы</label>
+                <input class="form__check-item-radio" type="radio" name="program" id="big-mass">
+                <label class="form__check-item-label" for="big-mass">Набор массы</label>
               </div>
               <div class="form__check-item">
-                <input class="form__check-item--radio" type="radio" name="program" id="other">
-                <label class="form__check-item--label" for="other">Не знаю (Нужен ваш совет)</label>
+                <input class="form__check-item-radio" type="radio" name="program" id="other">
+                <label class="form__check-item-label" for="other">Не знаю (Нужен ваш совет)</label>
               </div>
             </div>
           </div>
@@ -90,16 +90,16 @@
       </div>
       <fieldset class="form__contact">
         <div class="wrapper">
-          <legend class="form__legend">Контактные данные
+          <span class="form__legend">Контактные данные
             (владельца кота)
-          </legend>
+          </span>
           <div class="leveler">
             <div class="form__contact-item">
               <label for="mail">E-mail:*</label>
               <input class="form__input-mail" type="email" name="mail" id="mail" placeholder="kuklachev@gmail.com"
                 required>
               <svg class="form__svg form__svg-mail" width="18" height="13">
-                <use xlink:href="./img/sprite.svg#mail">
+                <use xlink:href="./img/sprite.svg#mail"></use>
               </svg>
             </div>
             <div class="form__contact-item">
@@ -116,7 +116,7 @@
       </fieldset>
       <fieldset class="form__comment">
         <div class="wrapper">
-          <legend class="form__legend">Комментарий</legend>
+          <span class="form__legend">Комментарий</span>
           <textarea class="form__comment-text" id="comment" name="comment"
             placeholder="Расскажите обо всех повАдках кота"></textarea>
 
@@ -126,24 +126,24 @@
 
       <fieldset class="form__options">
         <div class="wrapper">
-          <legend class="form__legend">Дополнительно</legend>
+          <span class="form__legend">Дополнительно</span>
           <div class="leveler">
             <div class="form__options-check">
-              <input class="form__options-check--checkbox" type="checkbox" name="sugarchange" id="sugarchange" checked
+              <input class="form__options-check-checkbox" type="checkbox" name="sugarchange" id="sugarchange" checked
                 disabled>
-              <label class="form__options-check--label" for="sugarchange">сахарозаменитель</label>
+              <label class="form__options-check-label" for="sugarchange">сахарозаменитель</label>
             </div>
             <div class="form__options-check">
-              <input class="form__options-check--checkbox" type="checkbox" name="wather" id="wather">
-              <label class="form__options-check--label" for="wather">питьевая вода</label>
+              <input class="form__options-check-checkbox" type="checkbox" name="wather" id="wather">
+              <label class="form__options-check-label" for="wather">питьевая вода</label>
             </div>
             <div class="form__options-check">
-              <input class="form__options-check--checkbox" type="checkbox" name="milk" id="milk">
-              <label class="form__options-check--label" for="milk">молоко</label>
+              <input class="form__options-check-checkbox" type="checkbox" name="milk" id="milk">
+              <label class="form__options-check-label" for="milk">молоко</label>
             </div>
             <div class="form__options-check">
-              <input class="form__options-check--checkbox" type="checkbox" name="vitamin" id="vitamin">
-              <label class="form__options-check--label" for="vitamin">витамины</label>
+              <input class="form__options-check-checkbox" type="checkbox" name="vitamin" id="vitamin">
+              <label class="form__options-check-label" for="vitamin">витамины</label>
             </div>
           </div>
         </div>
@@ -171,7 +171,7 @@
       </div>
       <div class="contacts__location contacts__location--bg">
         <div id="map" style="width: 100%;
-        height: 362px;
+        height: 398px;
         border: none;">
 
         </div>
@@ -202,7 +202,7 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="https://www.facebook.com/" class="social__link social__link--fb link ">
+            <a href="https://www.facebook.com/" class="social__link link ">
               <svg width="22" height="33">
                 <use xlink:href="./img/sprite.svg#fb"></use>
               </svg>
@@ -212,7 +212,7 @@
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link">
             <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__link--fb" width="27" height="34">
+            <svg width="27" height="34">
               <use xlink:href="./img/sprite.svg#academy"></use>
             </svg>
           </a>

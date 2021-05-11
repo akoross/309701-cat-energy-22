@@ -11,10 +11,10 @@
   padding: 13px 0 17px;
 
   @media (min-width: $width-tablet) {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 45px;
     grid-template-columns: auto auto 89px;
     border: 1px solid $special_grey-2;
-    padding: 26px 38px 30px;
+    padding: 26px 38px 28px;
   }
 
   @media (min-width: $width-desktop) {
@@ -118,7 +118,8 @@
     grid-column: 1 / 4;
     font-size: 16px;
     line-height: 20px;
-    height: 41px;
+    height: 38px;
+    align-self: flex-end;
   }
 
   @media (min-width: $width-desktop) {

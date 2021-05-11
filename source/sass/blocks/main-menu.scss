@@ -14,6 +14,10 @@
     justify-self: start;
     align-content: center;
   }
+
+  @media (min-width: $width-desktop) {
+    font-size: 20px;
+  }
 }
 
 .main-menu__item {
@@ -38,11 +42,14 @@
 }
 
 .main-menu__link {
-  padding: 0 0 10px 0;
+  padding: 0 0 10px;
 
   @media (min-width: $width-tablet) {
     display: block;
     height: 100%;
+    padding-bottom: 4px;
+    position: relative;
+    top: -5px;
   }
 
   &--index {
@@ -58,6 +65,7 @@
 
     @media (min-width: $width-tablet) {
       border-bottom: 2px solid $button-hover-color;
+      padding-bottom: 2px;
     }
 
     @media (min-width: $width-desktop) {
@@ -72,29 +80,13 @@
   &--active {
     @media (min-width: $width-tablet) {
       border-bottom: 2px solid $button-hover-color;
-      padding: 0 0 10px 0;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      opacity: 1;
+      padding: 0 0 2px;
     }
   }
 
   &--active-index {
     @media (min-width: $width-desktop) {
       border-bottom: 2px solid #ffffff;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-
-    &:active {
-      opacity: 1;
     }
   }
 }

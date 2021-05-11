@@ -68,6 +68,10 @@
     background: transparent;
   }
 
+  @media (min-width: $width-desktop) {
+    width: 440px;
+  }
+
   &:focus {
     outline: none;
   }
@@ -98,7 +102,24 @@
       width: 8px;
       background: $basic_green;
       border: 1px solid #cdcdcd;
-      box-shadow: 0 0 0 12px #ffffff, 0 0 3px 13px rgba(0, 0, 0, 0.16);
+      box-shadow:
+        0 0 0 12px rgb(255, 255, 255),
+        0 0 0 13px rgba(0, 0, 0, 0.16),
+        0 0 3px 14px rgba(0, 0, 0, 0.16);
+
+      &:hover {
+        box-shadow:
+          0 0 0 12px rgb(255, 255, 255),
+          0 0 0 13px rgba(0, 0, 0, 0.16),
+          0 2px 4px 14px rgba(0, 0, 0, 0.19);
+      }
+
+      &:active {
+        box-shadow:
+          0 0 0 12px rgb(255, 255, 255),
+          0 0 0 13px rgba($basic_green, 0.2),
+          0 0 4px 15px rgba($basic_green, 0.19);
+      }
     }
   }
 
@@ -128,7 +149,24 @@
       width: 8px;
       background: $basic_green;
       border: 1px solid #cdcdcd;
-      box-shadow: 0 0 0 12px #ffffff, 0 0 3px 13px rgba(0, 0, 0, 0.16);
+      box-shadow:
+        0 0 0 12px rgb(255, 255, 255),
+        0 0 0 13px rgba(0, 0, 0, 0.16),
+        0 0 3px 14px rgba(0, 0, 0, 0.16);
+    }
+
+    &:hover {
+      box-shadow:
+        0 0 0 12px rgb(255, 255, 255),
+        0 0 0 13px rgba(0, 0, 0, 0.16),
+        0 2px 4px 14px rgba(0, 0, 0, 0.19);
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 12px rgb(255, 255, 255),
+        0 0 0 13px rgba($basic_green, 0.2),
+        0 0 4px 15px rgba($basic_green, 0.19);
     }
   }
 

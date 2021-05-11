@@ -4,10 +4,16 @@
   text-transform: uppercase;
   border-top: 1px solid $special_grey;
   overflow: hidden;
+  padding: 27px 0 32px;
 
   @media (min-width: $width-tablet) {
     border: none;
     overflow: hidden;
+    padding: 65px 0 73px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 77px 0;
   }
 
   & .wrapper {
@@ -40,18 +46,6 @@
   &:invalid {
     border-color: $status_error;
     border-width: 2px;
-  }
-}
-
-.form__wrapper {
-  padding: 27px 0 32px;
-
-  @media (min-width: $width-tablet) {
-    padding: 65px 0 73px;
-  }
-
-  @media (min-width: $width-desktop) {
-    padding: 77px 0;
   }
 }
 
@@ -95,6 +89,7 @@
   background-color: #ffffff;
   top: -35px;
   left: -20px;
+  display: inline-block;
 
   @media (min-width: $width-tablet) {
     font-size: 36px;
@@ -163,12 +158,12 @@
   }
 }
 
-.form__check--border {
-  padding: 8px 0 10px;
+.form__check-border {
+  padding: 12px 0;
 
   @media (min-width: $width-tablet) {
     border: 1px solid $special_grey-1;
-    padding: 15px 0 13px 28px;
+    padding: 15px 0 18px 28px;
   }
 
   @media (min-width: $width-desktop) {
@@ -180,7 +175,7 @@
 .form__check-item {
   font-size: 16px;
   line-height: 18px;
-  padding: 8px 0;
+  padding: 7px 0;
   color: $special_dark-grey-2;
 
   @media (min-width: $width-tablet) {
@@ -194,10 +189,10 @@
   }
 }
 
-.form__check-item--radio {
+.form__check-item-radio {
   display: none;
 
-  &:checked + .form__check-item--label::before {
+  &:checked + .form__check-item-label::before {
     content: "";
     background: url("../img/radiobutton-active.svg") no-repeat center center;
 
@@ -206,12 +201,12 @@
     }
   }
 
-  &:disabled + .form__check-item--label {
+  &:disabled + .form__check-item-label {
     opacity: 0.3;
   }
 }
 
-.form__check-item--label {
+.form__check-item-label {
   display: flex;
   width: 300px;
   align-items: center;
@@ -288,7 +283,7 @@
   position: relative;
 
   @media (min-width: $width-tablet) {
-    margin-top: 55px;
+    margin-top: 53px;
     min-width: 630px;
     margin-bottom: 20px;
   }
@@ -362,15 +357,6 @@
 
   &--invalid {
     color: $status_error;
-
-    // path {
-    //   stroke: $status_error;
-    // }
-
-    // line {
-    //   fill: $status_error;
-    //   stroke: $status_error;
-    // }
   }
 }
 
@@ -465,7 +451,7 @@
 }
 
 .form__options-check {
-  margin: 0 0 12px;
+  margin: 0 0 11px;
   font-size: 16px;
 
   @media (min-width: $width-tablet) {
@@ -496,20 +482,20 @@
   }
 }
 
-.form__options-check--checkbox {
+.form__options-check-checkbox {
   display: none;
 
-  &:checked + .form__options-check--label::before {
+  &:checked + .form__options-check-label::before {
     content: "";
     background: url("../img/ok.svg") no-repeat center center;
   }
 
-  &:disabled + .form__options-check--label {
+  &:disabled + .form__options-check-label {
     opacity: 0.3;
   }
 }
 
-.form__options-check--label {
+.form__options-check-label {
   display: flex;
   align-items: center;
   cursor: pointer;

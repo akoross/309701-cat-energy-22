@@ -19,16 +19,15 @@
     color: #68b738;
   }
 
-  &--fb {
-    &:hover {
-      stroke: #68b738;
-      fill: none;
-    }
-  }
-
   &:active {
     svg path {
       opacity: 0.3;
+    }
+  }
+
+  & svg {
+    @media (min-width: $width-tablet) {
+      transform: scale(1.4);
     }
   }
 }

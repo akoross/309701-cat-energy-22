@@ -10,14 +10,14 @@
 
   @media (min-width: $width-desktop) {
     background: url("../img/logo-desktop.svg") no-repeat bottom 0 center;
+  }
 
-    &:hover {
-      background-image: url("../img/logo-desktop-hover.svg");
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &:active {
-      background-image: url("../img/logo-desktop-pressed.svg");
-    }
+  &:active {
+    opacity: 0.6;
   }
 }
 

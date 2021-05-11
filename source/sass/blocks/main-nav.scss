@@ -31,6 +31,8 @@
   @media (min-width: $width-desktop) {
     min-width: 485px;
     justify-content: space-between;
+    position: relative;
+    bottom: 4px;
   }
 }
 
