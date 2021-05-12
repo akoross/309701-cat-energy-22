@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   @media (min-width: $width-tablet) {
     width: 174px;
@@ -41,6 +41,14 @@
   @media (min-width: $width-desktop) {
     width: 202px;
     height: 59px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 

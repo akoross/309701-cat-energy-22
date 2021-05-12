@@ -229,10 +229,12 @@
     }
   }
 
-  &:hover {
-    &::before {
-      border-color: #bababa;
-    }
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -337,17 +339,16 @@
 .form__svg {
   position: absolute;
   right: 16px;
+  fill: transparent;
+  stroke: #666666;
 
   @media (min-width: $width-tablet) {
     right: 18px;
   }
 
   &--focus {
+    stroke: #63b738;
     color: #63b738;
-
-    path {
-      stroke: #63b738;
-    }
 
     line {
       fill: #63b738;
@@ -357,6 +358,7 @@
 
   &--invalid {
     color: $status_error;
+    stroke: $status_error;
   }
 }
 
@@ -391,7 +393,7 @@
   font-size: 16px;
   line-height: 18px;
   padding: 8px 13px;
-  border-color: $special_grey;
+  border-color: #e7e7e7;
   resize: none;
   height: 150px;
   outline: none;
@@ -403,6 +405,14 @@
     color: $special_dark-grey-1;
     margin: 50px 0 65px;
     padding: 10px 19px;
+  }
+
+  &:hover {
+    border: 2px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
   }
 }
 
@@ -518,10 +528,12 @@
     }
   }
 
-  &:hover {
-    &::before {
-      border-color: #bababa;
-    }
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

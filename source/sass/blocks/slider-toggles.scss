@@ -11,10 +11,13 @@
     align-items: flex-start;
   }
 
+  .slider-toggles__item {
+    padding: 0;
+  }
+
   @media (min-width: $width-desktop) {
     max-width: 584px;
     align-items: flex-end;
-
     padding: 0;
     margin-left: auto;
   }
@@ -33,10 +36,17 @@
     line-height: 30px;
     border-bottom: 1px dashed $special_grey;
     background: transparent;
+    width: max-content;
+    padding: 0;
   }
 
   &:hover {
     cursor: pointer;
+    border-bottom: 1px solid $special_grey;
+  }
+
+  &:focus {
+    border: none;
   }
 }
 
@@ -163,8 +173,7 @@
     }
 
     &:active {
-      box-shadow:
-        0 0 0 12px rgb(255, 255, 255),
+      box-shadow: 0 0 0 12px rgb(255, 255, 255),
         0 0 0 13px rgba($basic_green, 0.2),
         0 0 4px 15px rgba($basic_green, 0.19);
     }
