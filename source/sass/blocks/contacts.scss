@@ -54,7 +54,7 @@
   font-family: $font-site;
   font-size: 16px;
   text-transform: uppercase;
-  line-height: 20px;
+  line-height: 19px;
 
   @media (min-width: $width-tablet) {
     font-size: 20px;
@@ -67,13 +67,14 @@
   margin: 0;
   max-width: 145px;
   color: $special_dark-grey-1;
-  line-height: 20px;
+  line-height: 19px;
 
   @media (min-width: $width-tablet) {
     font-size: 16px;
     line-height: 20px;
     max-width: 160px;
     text-align: right;
+    padding-top: 5px;
 
     &-br {
       display: block;
@@ -81,7 +82,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 12px;
+    padding-top: 4px;
     padding-left: 0;
     text-align: left;
     max-width: 168px;

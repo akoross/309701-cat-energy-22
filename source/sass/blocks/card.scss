@@ -19,21 +19,26 @@
 
   &--small {
     @media (min-width: $width-tablet) {
-      width: 160px;
-      height: 170px;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (min-width: $width-desktop) {
       position: relative;
-      top: 15px;
+      top: 5px;
     }
   }
 
   &--big {
-    padding-top: 10px;
-
     @media (min-width: $width-tablet) {
-      width: 170px;
-      height: 200px;
+      width: 100%;
+      height: 100%;
       position: relative;
-      top: -5px;
+      top: 4px;
+    }
+
+    @media (min-width: $width-desktop) {
+      top: 7px;
     }
   }
 
@@ -103,13 +108,15 @@
     grid-column: 1 / 2;
     width: 174px;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 25px;
     text-align: center;
     margin-top: 8px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: 15px;
+    line-height: 21px;
+    margin-top: 20px;
+    padding-left: 2px;
   }
 }
 
@@ -170,6 +177,10 @@
     position: relative;
     top: -12px;
   }
+
+  @media (min-width: $width-desktop) {
+    top: -7px;
+  }
 }
 
 .card__button {
@@ -189,10 +200,14 @@
     grid-column: 1 / 2;
     font-size: 16px;
     margin-top: 0;
+    position: relative;
+    top: -4px;
+    height: 38px;
   }
 
   @media (min-width: $width-desktop) {
     width: 168px;
+    top: 2px;
   }
 }
 

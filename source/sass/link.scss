@@ -1,4 +1,8 @@
 .link {
   text-decoration: none;
   color: $special_dark-grey-2;
+
+  :focus {
+    outline: none;
+  }
 }

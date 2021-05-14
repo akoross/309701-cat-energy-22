@@ -50,7 +50,7 @@
   @media (min-width: $width-tablet) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 17px;
+    padding-left: 19px;
     height: 51px;
   }
 
@@ -64,7 +64,7 @@
 
   &:focus {
     border-color: $special_dark-grey-1;
-    border-width: 2px;
+    box-shadow: 2px;
     outline: none;
   }
 }

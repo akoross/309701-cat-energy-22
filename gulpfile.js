@@ -59,7 +59,16 @@ exports.scripts = scripts;
 
 const optimizeImage = () => {
   return gulp
-    .src("source/img/**/*.{png,jpg,svg}")
+    .src(
+      [
+        "source/img/**/*.{png,jpg,svg}",
+        "!source/img/ico*/",
+        "!source/img/icon*/*",
+      ],
+      {
+        nodir: true,
+      }
+    )
     .pipe(
       imagemin([
         imagemin.mozjpeg({ progresive: true }),
@@ -73,7 +82,16 @@ exports.optimizeImage = optimizeImage;
 
 const copyImages = () => {
   return gulp
-    .src("source/img/**/*.{png,imj,svg,webp}")
+    .src(
+      [
+        "source/img/**/*.{png,imj,svg,webp}",
+        "!source/img/ico*/",
+        "!source/img/icon*/*",
+      ],
+      {
+        nodir: true,
+      }
+    )
     .pipe(gulp.dest("build/img"));
 };
 exports.copyImages = copyImages;
@@ -105,10 +123,9 @@ exports.sprite = sprite;
 
 const copy = (done) => {
   gulp
-    .src(
-      ["source/fonts/*.{woff2,woff}", "sours/*.ico", "source/img/**/*.svg"],
-      { base: "source" }
-    )
+    .src(["source/fonts/*.{woff2,woff}", "source/*.ico"], {
+      base: "source",
+    })
     .pipe(gulp.dest("build"));
   done();
 };
